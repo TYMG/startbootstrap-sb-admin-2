@@ -122,6 +122,9 @@ body {
     margin-left: auto;
   }
 }
+.dashboard-header {
+  text-align: center;
+}
 .btn-outline {
   color: inherit;
   background-color: transparent;
