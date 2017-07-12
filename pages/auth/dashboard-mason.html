@@ -12,19 +12,19 @@
     <title>MyServicer, YourServicer, ShoeServicer</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
-    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <link href="../../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+    <link href="../../dist/css/sb-admin-2.css" rel="stylesheet">
 
     <!-- Morris Charts CSS -->
-    <link href="../vendor/morrisjs/morris.css" rel="stylesheet">
+    <link href="../../vendor/morrisjs/morris.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -207,7 +207,7 @@
                             <!-- /input-group -->
                         </li>
                         <li>
-                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a href="dashboard-paul.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
@@ -303,7 +303,7 @@
         <div id="dashboard-page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header dashboard-header">Welcome Back {{ Name }}!!!</h1>
+                    <h1 class="page-header dashboard-header">Welcome Back Mason!!!</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -317,7 +317,7 @@
                                     <i class="fa fa-money fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">$326</div>
+                                    <div class="huge">$829</div>
                                     <div>Next Payment</div>
                                 </div>
                             </div>
@@ -331,60 +331,16 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="panel panel-green">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <i class="fa fa-trophy fa-5x"></i>
-                                </div>
-                                <div class="col-xs-9 text-right">
-                                    <div class="huge">1</div>
-                                    <div>New Badge!</div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#">
-                            <div class="panel-footer">
-                                <span class="pull-left">View Details</span>
-                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                <div class="clearfix"></div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="panel panel-yellow">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <i class="fa fa-shopping-cart fa-5x"></i>
-                                </div>
-                                <div class="col-xs-9 text-right">
-                                    <div class="huge"></div>
-                                    <div>New Orders!</div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#">
-                            <div class="panel-footer">
-                                <span class="pull-left">View Details</span>
-                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                <div class="clearfix"></div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
+                 <div class="col-lg-3 col-lg-offset-1 col-md-6">
                     <div class="panel panel-red">
                         <div class="panel-heading">
                             <div class="row">
                                 <div class="col-xs-3">
-                                    <i class="fa fa-support fa-5x"></i>
+                                    <i class="fa fa-bomb fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">13</div>
-                                    <div>Support Tickets!</div>
+                                    <div class="huge">75</div>
+                                    <div>Days Overdue</div>
                                 </div>
                             </div>
                         </div>
@@ -397,6 +353,31 @@
                         </a>
                     </div>
                 </div>
+                <div class="col-lg-3 col-lg-offset-1 col-md-6">
+                    <div class="panel panel-red">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-exclamation-triangle fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div style="font-size:25px">Loan at Risk</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">Customer Service</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                                <br>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+               
+
+
             </div>
             <!-- /.row -->
             <div class="row">
@@ -426,41 +407,63 @@
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
-                            <div id="morris-area-chart"></div>
+                            <div id="rasheeda-morris-area-chart" style="height: 250px;"></div>
                         </div>
                         <!-- /.panel-body -->
                     </div>
                     <!-- /.panel -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <i class="fa fa-clock-o fa-fw"></i> Your Journey
+                            <i class="fa fa-clock-o fa-fw"></i> Your Loan Journey
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
                             <ul class="timeline">
                                 <li>
-                                    <div class="timeline-badge"><i class="fa fa-check"></i>
+                                    <div class="timeline-badge"><i class="fa fa-graduation-cap"></i>
                                     </div>
                                     <div class="timeline-panel">
                                         <div class="timeline-heading">
-                                            <h4 class="timeline-title">Lorem ipsum dolor</h4>
-                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> 11 hours ago via Twitter</small>
+                                            <h4 class="timeline-title">Graduation!!</h4>
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> 4 mins ago</small>
                                             </p>
                                         </div>
                                         <div class="timeline-body">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero laboriosam dolor
-                                                perspiciatis omnis exercitationem. Beatae, officia pariatur? Est cum veniam
-                                                excepturi. Maiores praesentium, porro voluptas suscipit facere rem dicta,
-                                                debitis.</p>
+                                            <p>From our reports, it looks like you graduated. Congratualations!!! That's a big
+                                                step.
+                                            </p>
+                                            <p>Would you like some resources to guide you take the next step in your journey?</p>
+                                            <br>
+                                            <div class="row">
+                                                <div class="col-xs-6"> <a href="#">Yes</a>
+                                                </div>
+                                                <div class="col-xs-6"> <a href="#">No</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="timeline-inverted">
-                                    <div class="timeline-badge warning"><i class="fa fa-credit-card"></i>
+                                    <div class="timeline-badge success"><i class="fa fa-trophy"></i>
                                     </div>
                                     <div class="timeline-panel">
                                         <div class="timeline-heading">
-                                            <h4 class="timeline-title">Lorem ipsum dolor</h4>
+                                            <h4 class="timeline-title">More than 75% Paid Off!!!</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>Great Job!! You're on the right track. Keep it off.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maiores
+                                                odit qui est tempora eos, nostrum provident explicabo dignissimos debitis
+                                                vel! Adipisci eius voluptates, ad aut recusandae minus eaque facere.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-inverted">
+                                    <div class="timeline-badge yellow"><i class="fa fa-credit-card"></i>
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4 class="timeline-title">Refinaced Loans</h4>
                                         </div>
                                         <div class="timeline-body">
                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolorem quibusdam,
@@ -477,12 +480,10 @@
                                     </div>
                                     <div class="timeline-panel">
                                         <div class="timeline-heading">
-                                            <h4 class="timeline-title">Lorem ipsum dolor</h4>
+                                            <h4 class="timeline-title">Paying Less?</h4>
                                         </div>
                                         <div class="timeline-body">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus numquam
-                                                facilis enim eaque, tenetur nam id qui vel velit similique nihil iure molestias
-                                                aliquam, voluptatem totam quaerat, magni commodi quisquam.</p>
+                                            <p>We're noticing youre paying less than the minimum. We're here to help.</p>
                                         </div>
                                     </div>
                                 </li>
@@ -546,13 +547,14 @@
                                     </div>
                                     <div class="timeline-panel">
                                         <div class="timeline-heading">
-                                            <h4 class="timeline-title">Lorem ipsum dolor</h4>
+                                            <h4 class="timeline-title">Started School</h4>
                                         </div>
                                         <div class="timeline-body">
                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt obcaecati,
                                                 quaerat tempore officia voluptas debitis consectetur culpa amet, accusamus
                                                 dolorum fugiat, animi dicta aperiam, enim incidunt quisquam maxime neque
-                                                eaque.</p>
+                                                eaque.
+                                            </p>
                                         </div>
                                     </div>
                                 </li>
@@ -604,43 +606,43 @@
                                             <tbody>
                                                 <tr>
                                                     <td>3326</td>
-                                                    <td>10/21/2013</td>
+                                                    <td>6/8/2017</td>
                                                     <td>3:29 PM</td>
                                                     <td>$321.33</td>
                                                 </tr>
                                                 <tr>
                                                     <td>3325</td>
-                                                    <td>10/21/2013</td>
+                                                    <td>3/29/2017</td>
                                                     <td>3:20 PM</td>
                                                     <td>$234.34</td>
                                                 </tr>
                                                 <tr>
                                                     <td>3324</td>
-                                                    <td>10/21/2013</td>
+                                                    <td>11/21/2016</td>
                                                     <td>3:03 PM</td>
                                                     <td>$724.17</td>
                                                 </tr>
                                                 <tr>
                                                     <td>3323</td>
-                                                    <td>10/21/2013</td>
+                                                    <td>9/21/2016</td>
                                                     <td>3:00 PM</td>
                                                     <td>$23.71</td>
                                                 </tr>
                                                 <tr>
                                                     <td>3322</td>
-                                                    <td>10/21/2013</td>
+                                                    <td>4/21/2016</td>
                                                     <td>2:49 PM</td>
                                                     <td>$8345.23</td>
                                                 </tr>
                                                 <tr>
                                                     <td>3321</td>
-                                                    <td>10/21/2013</td>
+                                                    <td>1/2/2015</td>
                                                     <td>2:23 PM</td>
                                                     <td>$245.12</td>
                                                 </tr>
                                                 <tr>
                                                     <td>3320</td>
-                                                    <td>10/21/2013</td>
+                                                    <td>8/5/2014</td>
                                                     <td>2:15 PM</td>
                                                     <td>$5663.54</td>
                                                 </tr>
@@ -664,20 +666,10 @@
                     </div>
                 </div>
                 <!-- /.panel -->
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <i class="fa fa-bar-chart-o fa-fw"></i> Donut Chart Example
-                    </div>
-                    <div class="panel-body">
-                        <div id="morris-donut-chart"></div>
-                        <a href="#" class="btn btn-default btn-block">View Details</a>
-                    </div>
-                    <!-- /.panel-body -->
-                </div>
                 <!-- /.panel -->
                 <div class="chat-panel panel panel-default">
                     <div class="panel-heading">
-                        <i class="fa fa-comments fa-fw"></i> Chat
+                        <i class="fa fa-comments fa-fw"></i> Chat With My Assistant
                         <div class="btn-group pull-right">
                             <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
                                     <i class="fa fa-chevron-down"></i>
@@ -721,13 +713,13 @@
                                     </span>
                                 <div class="chat-body clearfix">
                                     <div class="header">
-                                        <strong class="primary-font">Jack Sparrow</strong>
+                                        <strong class="primary-font">Steve the Assistant</strong>
                                         <small class="pull-right text-muted">
                                                 <i class="fa fa-clock-o fa-fw"></i> 12 mins ago
                                             </small>
                                     </div>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        Hey did you get that thing I sent you?
                                     </p>
                                 </div>
                             </li>
@@ -739,10 +731,10 @@
                                     <div class="header">
                                         <small class=" text-muted">
                                                 <i class="fa fa-clock-o fa-fw"></i> 13 mins ago</small>
-                                        <strong class="pull-right primary-font">Bhaumik Patel</strong>
+                                        <strong class="pull-right primary-font">Me</strong>
                                     </div>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        Thanks Steve!!
                                     </p>
                                 </div>
                             </li>
@@ -752,12 +744,12 @@
                                     </span>
                                 <div class="chat-body clearfix">
                                     <div class="header">
-                                        <strong class="primary-font">Jack Sparrow</strong>
+                                        <strong class="primary-font">Steve the Assistant</strong>
                                         <small class="pull-right text-muted">
                                                 <i class="fa fa-clock-o fa-fw"></i> 14 mins ago</small>
                                     </div>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        Hey there Mason!! I can send you some reading material to help you on your journey.
                                     </p>
                                 </div>
                             </li>
@@ -769,10 +761,10 @@
                                     <div class="header">
                                         <small class=" text-muted">
                                                 <i class="fa fa-clock-o fa-fw"></i> 15 mins ago</small>
-                                        <strong class="pull-right primary-font">Bhaumik Patel</strong>
+                                        <strong class="pull-right primary-font">Me</strong>
                                     </div>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        Hey Steve!! I'm new and I need some resources to get me started.
                                     </p>
                                 </div>
                             </li>
@@ -798,26 +790,24 @@
         <!-- /.row -->
     </div>
     <!-- /#page-wrapper -->
-
-    </div>
     <!-- /#wrapper -->
 
     <!-- jQuery -->
-    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../../vendor/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Metis Menu Plugin JavaScript -->
-    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+    <script src="../../vendor/metisMenu/metisMenu.min.js"></script>
 
     <!-- Morris Charts JavaScript -->
-    <script src="../vendor/raphael/raphael.min.js"></script>
-    <script src="../vendor/morrisjs/morris.min.js"></script>
-    <script src="../data/morris-data.js"></script>
+    <script src="../../vendor/raphael/raphael.min.js"></script>
+    <script src="../../vendor/morrisjs/morris.min.js"></script>
+    <script src="../../data/morris-data-rasheeda.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="../dist/js/sb-admin-2.js"></script>
+    <script src="../../dist/js/sb-admin-2.js"></script>
 
 </body>
 
