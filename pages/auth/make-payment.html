@@ -298,63 +298,102 @@
                             </div>
                         </div>
                         <div class="panel-body">
-                            <div class="make-payment__schedule__amt-due">
-                                <div>Next Payment Due:</div>
-                                <div>Past Due:</div>
-                                <div>Current Ammount Due:</div>
-                                <div>Pay This Amount</div>
+                            <div class="make-payment__schedule__amt-due-fields">
+                                <div class="make-payment_schedule-amt-field">
+                                    <h3>Next Payment Due: 8/11/2017</h3>
+                                </div>
+                                <div class="make-payment_schedule-amt-field">
+                                    <h3>Past Due: <span style: "color:red">$3.50</span></h3>
+                                </div>
+                                <div class="make-payment_schedule-amt-field">
+                                    <h3>Current Ammount Due: $567.34
+                                    </h3>
+                                </div>
+                                <div class="make-payment_schedule-amt-field">
+                                    <h3>Pay This Amount: $570.84
+                                    </h3>
+                                </div>
                             </div>
                             <div class="make-payment__schedule__button-group">
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <button type="button" class="btn btn-success">Schedule A Payment</button>
+                                <div class="row row-centered">
+                                    <div class="col-md-3 col-centered">
+                                        <button type="button" class="btn btn-success make-payment__schedule__button">Schedule A Payment</button>
                                     </div>
-                                    <div class="col-md-1">
-                                        <h3>OR</h3>
+                                    <div class="col-md-1 col-centered">
+                                        <p class="make-payment__schedule__button-group__OR">OR</p>
                                     </div>
-                                    <div class="col-md-3">
-                                        <button type="button" class="btn btn-primary">Primary</button>
+                                    <div class="col-md-3 col-centered">
+                                        <button type="button" class="btn btn-primary make-payment__schedule__button">Repayment Options</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- /.panel -->
-                    <div class="panel panel-default">
+                    <div id="make-payment__section-other-opts" class="panel panel-default">
                         <div class="panel-heading">
-                            <i class="fa fa-clock-o fa-fw"></i> Other Payment Options
+                            <i class="fa fa-money fa-fw"></i> Other Payment Options
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
-                            <div>
-                                <p>Below are the other possible payent options that MyServicer Can Process</p>
+                            <div class="make-payment__other-opts__about">
+                                <p>Below are the other possible payent options that MyServicer provides so you can make a payment
+                                    anytime, anywhere....</p>
                             </div>
-                            <div class="make-payment__other-opts__option">
-                                <h4>Auto Debit</h4>
-                                <p>Never miss a payment. When you sign up for auto debit, your payment is automatically deducted
-                                    from the bank account of your choosing. Plus, you could even save on your interest rate*
-                                    while your account is in an active repayment status!
-                                    <p>
+                            <div class="make-payment__other-opts__options">
+                                <div class="row make-payment__other-opts__option">
+                                    <div class="col-md-2">
+                                        <i class="fa fa-clock-o fa-5x fa-green"></i>
+                                    </div>
+                                    <div class="col-md-10 make-payment__other-opts__option-txt">
+                                        <h3>Auto Debit</h3>
+                                        <p>Never miss a payment. When you sign up for auto debit, your payment is automatically
+                                            deducted from the bank account of your choosing. Plus, you could even save on
+                                            your interest rate* while your account is in an active repayment status!
+                                            <p>
+                                                <a href=#>Sign Up For Auto Debit Program</a>
+                                    </div>
+                                </div>
+                                <div class="row make-payment__other-opts__option">
+                                    <div class="col-md-10 make-payment__other-opts__option-txt">
+                                        <h3>Via Mail</h3>
+                                        <p>Mail your payment using the address located on your statement. Make sure that you
+                                            include your MyServicer account number, including the “D, J, or E”, so that your
+                                            payment is processed in a timely manner and correctly applied to your accounts.</p>
+                                        <a href=#>How To: Mail Your Payment</a>
+
+                                    </div>
+                                    <div class="col-md-2">
+                                        <i class="fa fa-envelope fa-green fa-5x"></i>
+                                    </div>
+                                </div>
+                                <div class="row make-payment__other-opts__option">
+                                    <div class="col-md-2">
+                                        <i class="fa fa-university fa-green fa-5x"></i>
+                                    </div>
+                                    <div class="col-md-10 make-payment__other-opts__option-txt">
+                                        <h3>Bank Online Pay</h3>
+                                        <p>Use your bank's online bill pay service (make sure they don't charge a fee). You'll
+                                            just need to give them the Payee (MyServicer), your account number, and the payment
+                                            address, which is the P.O. box address on the bottom of your statement.
+                                            <p>
+                                        <a href=#>How To: Set Up Bank Auto Bill Pay</a>
+
+                                    </div>
+                                </div>
+                                <div class="row make-payment__other-opts__option">
+                                    <div class="col-md-10 make-payment__other-opts__option-txt">
+                                        <h3>Via Phone</h3>
+                                        <p>Call us at 888.486.4722 and make a payment through our automated phone system or
+                                            with a Customer Service Representative.</p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <i class="fa fa-phone fa-green fa-5x"></i>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="make-payment__other-opts__option">
-                                <h4>Via Mail</h4>
-                                <div>Mail your payment using the address located on your statement. Make sure that you include
-                                    your MyServicer account number, including the “D, J, or E”, so that your payment is processed
-                                    in a timely manner and correctly applied to your accounts.</div>
-                            </div>
-                            <div class="make-payment__other-opts__option">
-                                <h4>Bank Online Pay</h4>
-                                <div>Use your bank's online bill pay service (make sure they don't charge a fee). You'll just
-                                    need to give them the Payee (MyServicer), your account number, and the payment address,
-                                    which is the P.O. box address on the bottom of your statement.</div>
-                            </div>
-                            <div class="make-payment__other-opts__option">
-                                <h4>Via Phone</h4>
-                                <div>Call us at 888.486.4722 and make a payment through our automated phone system or with a Customer
-                                    Service Representative.</div>
-                            </div>
+                            <!-- /.panel-body -->
                         </div>
-                        <!-- /.panel-body -->
                     </div>
                     <!-- /.panel -->
                 </div>
@@ -451,7 +490,15 @@
                                     </div>
                                     <!-- /.table-responsive -->
                                 </div>
-                                <div class="panel panel-default">
+                               
+
+                                <!-- /.col-lg-8 (nested) -->
+                            </div>
+                            <!-- /.row -->
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                     <div class="panel panel-default">
                                     <div class="panel-heading">
                                         <i class="fa fa-bar-chart-o fa-fw"></i> Your Progress
                                         <div class="pull-right">
@@ -479,13 +526,6 @@
                                     </div>
                                     <!-- /.panel-body -->
                                 </div>
-
-                                <!-- /.col-lg-8 (nested) -->
-                            </div>
-                            <!-- /.row -->
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
                 </div>
                 <!-- /.panel -->
                 <!-- /.panel-footer -->

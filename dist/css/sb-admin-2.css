@@ -10,6 +10,29 @@ body {
   background-color: #f8f8f8;
   height: 100%;
 }
+/********
+
+GENERIC STYLEs
+
+**********/
+/* centered columns styles */
+.row-centered {
+  text-align: center;
+}
+.col-centered {
+  display: inline-block;
+  float: none;
+  /* inline-block space fix */
+  margin-right: -4px;
+}
+/******
+
+COLORS
+
+*******/
+.fa-green {
+  color: #8CE263;
+}
 #wrapper {
   width: 100%;
 }
@@ -504,4 +527,45 @@ Profile Settings
 }
 .career-settings__button {
   padding: 1%;
+}
+/* 
+
+Make A Payment 
+
+*/
+.make-payment__schedule__amt-due-fields {
+  padding-bottom: 5%;
+}
+.make-payment__schedule__amt-due-field {
+  text-align: center;
+  width: 300px;
+}
+.make-payment__schedule__amt-due {
+  margin: 1% 0;
+}
+.make-payment__schedule__button {
+  width: 205px;
+  height: 45px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.make-payment__schedule__button-group {
+  margin: 0 auto;
+  line-height: normal;
+}
+.make-payment__schedule__button-group__OR {
+  font-size: 30px;
+}
+.make-payment__other-opts__about {
+  font-size: 25px;
+  margin: 5% 2%;
+}
+.make-payment__other-opts__options {
+  margin: 1%;
+}
+.make-payment__other-opts__option i {
+  margin-top: 20%;
+}
+.make-payment__other-opts__option-txt > p {
+  text-align: left;
 }
