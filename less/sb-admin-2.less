@@ -48,6 +48,11 @@ COLORS
     color:@puke-green;
 }
 
+.btn-green {
+    background-color:@puke-green;
+    color: white;
+}
+
 // Wrappers
 
 #wrapper {
@@ -730,13 +735,13 @@ PROCESS A PAYMENT
 *******************************/
 
 #process_payment__main {
-    border: solid 1px black
+    padding:1%;
 }
 
 .steps {
-  margin: 40px;
   padding: 0;
   overflow: hidden;
+  margin:0;
 }
 .steps a {
   color: white;
@@ -814,12 +819,30 @@ PROCESS A PAYMENT
     background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
 
+#process-payment__main-form-acct-details {
+ background: cornflowerblue;
+ height:70px;
+}
+
+#process-payment__main-form-acct-details > p {
+    padding: 1% 0;
+    font-size: 25px
+}
+
+#process-payment__main-form__pay-by-acct-grp {
+    margin: 1% 0;
+}
+
 .acct-grp {
-    font-size: 12px;
+    font-size: 15px;
     height: 75px;
     padding: 2%;
     background: darkgray;
+    border: solid 1px black;
+}
 
+.acct-grp__pay-amt {
+    margin-top:-2%;
 }
 
 .acct-grp__top {
@@ -831,5 +854,19 @@ PROCESS A PAYMENT
 }
 
 #process-payment__main-form__form {
-    padding: 2%;
+    padding: 1.5%;
+}
+
+#process-payment__main-form___pay-acct__bank-info {
+    height:225px;
+}
+
+#process-payment__main-form___pay-acct__bank-info > div {
+    height:50px;
+    padding:1%;
+}
+
+#process-payment__main-form__submit {
+    height: 50px;
+    
 }

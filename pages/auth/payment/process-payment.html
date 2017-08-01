@@ -37,7 +37,7 @@
 
 <body>
 
-    <div id="wrapper">
+    <div id="wrapper" class="container">
 
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
@@ -282,17 +282,14 @@
         </nav>
 
         <div id="dashboard-page-wrapper">
-            <div class="row">
+            <div id="process_payment__main" class="row">
                 <div class="col-lg-12">
                     <h1 class="page-header dashboard-header">Process Your Payment</h1>
                 </div>
                 <!-- /.col-lg-12 -->
-            </div>
-            <hr id="process_payment__hr">
-            <!-- /.row -->
-            <div class="row">
+                <!-- /.row -->
                 <div class="col-lg-12">
-                    <div id="process_payment__main">
+                    <div id="process_payment__main-body">
                         <div id="process_payment__chevron-nav">
                             <ul class="steps steps-5">
                                 <li><a href="#" title=""><em>Step 1: Payment Options</em><span></span></a></li>
@@ -302,8 +299,8 @@
                             </ul>
                         </div>
                         <div id="process-payment__main-form">
-                            <div id="process-payment__main-form-acct-details">
-                                Account Details
+                            <div id="process-payment__main-form-acct-details" >
+                                <p class="col-6 my-auto">Account Details</p>
                             </div>
                             <div id="process-payment__main-form__amt-due">
                                 <div class="row">
@@ -323,7 +320,7 @@
                                         <label>Total Amount Due</label>
                                         <p>454.06</p>
                                     </div>
-                                    <div class="col-md-2">
+                                    <div id="amt-due__ATP" class="col-md-2 collapse">
                                         <label>Amount To Pay</label>
                                         <input type="text" name="amountToPay" placeholder="Enter Value">
                                     </div>
@@ -331,12 +328,11 @@
                             </div>
                             <div id="process-payment__main-form__pay-by">
                                 <div class="btn-group" role="group" aria-label="...">
-                                    <button type="button" class="btn btn-default">Left</button>
-                                    <button type="button" class="btn btn-default">Middle</button>
-                                    <button type="button" class="btn btn-default">Right</button>
+                                    <a href="#amt-due__ATP" type="button" class="btn btn-default" data-toggle="collapse">Pay by Account</a>
+                                    <a href="#process-payment__main-form__pay-by-acct-grp" type="button" class="btn btn-default" data-toggle="collapse">Pay by Group</a>
                                 </div>
                             </div>
-                            <div id="process-payment__main-form__pay-by-acct-grp">
+                            <div id="process-payment__main-form__pay-by-acct-grp" class="collapse in">
                                 <div id="process-payment__pay-by-acct-grp__grp-A" class="acct-grp acct-grp__top">
                                     <div class="col-md-1">
                                         <label> Group A</label>
@@ -369,7 +365,7 @@
                                             $3400.23
                                         </div>
                                     </div>
-                                    <div class="col-md-2">
+                                    <div class="col-md-2 acct-grp__pay-amt">
                                         <label>Payment Amount</label>
                                         <input type="text" name="payment-amount" placeholder="Amount">
                                     </div>
@@ -406,7 +402,7 @@
                                             $3400.23
                                         </div>
                                     </div>
-                                    <div class="col-md-2">
+                                    <div class="col-md-2 acct-grp__pay-amt">
                                         <label>Payment Amount</label>
                                         <input type="text" name="payment-amount" placeholder="Amount">
                                     </div>
@@ -415,51 +411,105 @@
                             <div id="process-payment__main-form__form">
                                 <div id="process-payment__main-form__form__pay-amt" class="row">
                                     <div class="col-md-4">
-                                        <h4>Amount To Pay</h4>
+                                        <h3>Amount To Pay</h3>
                                     </div>
-                                    <div class="col-md-4 col-md-offset-4">
+                                    <div class="col-md-4 col-md-offset-1">
                                         <h4>454.06</h4>
                                     </div>
                                 </div>
                                 <div id="process-payment__main-form__form__pay-date" class="row">
                                     <div class="col-md-4">
-                                        <h4>Payment Date</h4>
+                                        <h3>Payment Date</h3>
                                     </div>
-                                    <div class="col-md-4 col-md-offset-4">
+                                    <div class="col-md-4 col-md-offset-1">
                                         <input type="date" type="date" value="2017-08-11">
                                     </div>
                                 </div>
-                                <div id="process-payment__main-form__form__pay-acct" class="row">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <h4>Account Type</h4>
-                                        </div>
+                                <div id="process-payment__main-form__form__pay-acct-type" class="row">
+                                    <div class="col-md-12">
+                                        <h3>Account Type</h3>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="col-md-6">
-                                                <input type="radio" id="genderChoice1" name="gender" value="male">
-                                                <label for="genderChoice1">Checking</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <input type="radio" id="genderChoice2" name="gender" value="female">
-                                                <label for="genderChoice2">Savings</label>
-                                            </div>
+                                    <div class="col-md-6">
+                                        <div class="col-md-4">
+                                            <input type="radio" id="genderChoice1" name="gender" value="male">
+                                            <label for="genderChoice1">Checking</label>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input type="radio" id="genderChoice2" name="gender" value="female">
+                                            <label for="genderChoice2">Savings</label>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="process-payment__main-form___pay-acct__info">
-                                    Routing Number Banking Institution Name On the Account
-                                </div>
+                                <div id="process-payment__main-form___pay-acct__bank-info">
+                                    <h3>Banking Information</h3>
+                                    <div class="col-md-12 row">
+                                        <div class="col-md-6">
+                                            <div class="col-md-4">
+                                                <label>Routing Number</label>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="text" name="ro-num" placeholder="Routing Number">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            &nbsp;
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 row">
+                                        <div class="col-md-6">
+                                            <div class="col-md-4">
+                                                <label>Banking Institution</label>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="text" name="ro-num" placeholder="Banking Institution">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            &nbsp;
+                                        </div>
 
+                                    </div>
+                                    <div class="col-md-12 row">
+                                        <div class="col-md-6">
+                                            <div class="col-md-4">
+                                                <label>Name On Account</label>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="textarea" name="ro-num" placeholder="Name on Account">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            &nbsp;
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 row">
+                                        <div class="col-md-6">
+                                            <div class="col-md-4">
+                                                <label>Account Nickname</label>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="text" name="ro-num" placeholder="Account Nickname">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            &nbsp;
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="process-payment__main-form__submit">
+                                <div class="col-md-6 col-md-offset-3 text-center">
+                                    <button type="button" class="btn btn-green btn-lg centered my-auto">Proceed To Review and Confimation</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!-- /.col-lg-8 -->
                 </div>
                 <!-- /.panel .chat-panel -->
+                <!-- /.col-lg-4 -->
             </div>
-            <!-- /.col-lg-4 -->
         </div>
         <!-- /.row -->
     </div>
