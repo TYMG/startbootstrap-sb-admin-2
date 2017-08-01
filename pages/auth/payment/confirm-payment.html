@@ -37,7 +37,7 @@
 
 <body>
 
-    <div id="wrapper">
+    <div id="wrapper" class="container">
 
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
@@ -282,259 +282,126 @@
         </nav>
 
         <div id="dashboard-page-wrapper">
-            <div class="row">
+            <div id="confirm_payment__main">
                 <div class="col-lg-12">
-                    <h1 class="page-header dashboard-header">Make A Payment</h1>
+                    <h1 class="page-header dashboard-header">Process Your Payment</h1>
                 </div>
                 <!-- /.col-lg-12 -->
-            </div>
-            <!-- /.row -->
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <i class="fa fa-bar-chart-o fa-fw"></i> Schedule A Payment
-                            <div class="pull-right">
-                            </div>
+                <!-- /.row -->
+                <div class="col-lg-12">
+                    <div id="process_payment__main-body">
+                        <div id="process_payment__chevron-nav">
+                            <ul class="steps steps-5">
+                                <li><a href="#" title=""><em>Step 1: Payment Options</em><span></span></a></li>
+                                <li class="current"><a href="#" title=""><em>Step 2: Review & Confirm</em><span></span></a></li>
+                                <li><a href="#" title=""><em>Step 3: Receipt</em><span></span></a></li>
+                            </ul>
                         </div>
-                        <div class="panel-body">
-                            <div class="make-payment__schedule__amt-due-fields">
-                                <div class="make-payment_schedule-amt-field">
-                                    <h3>Next Payment Due: 8/11/2017</h3>
-                                </div>
-                                <div class="make-payment_schedule-amt-field">
-                                    <h3>Past Due: <span style:"color:red">$3.50</span></h3>
-                                </div>
-                                <div class="make-payment_schedule-amt-field">
-                                    <h3>Current Ammount Due: $567.34
-                                    </h3>
-                                </div>
-                                <div class="make-payment_schedule-amt-field">
-                                    <h3>Pay This Amount: $570.84
-                                    </h3>
-                                </div>
-                            </div>
-                            <div class="make-payment__schedule__button-group">
-                                <div class="row row-centered">
-                                    <div class="col-md-3 col-centered">
-                                        <a href="process-payment.html" class="btn btn-success make-payment__schedule__button">Schedule A Payment</a>
+                        <div id="process-payment__main-form">
+                            <div id="process-payment__main-form__form">
+                                <div id="process-payment__main-form__form__pay-amt" class="row">
+                                    <div class="col-md-4">
+                                        <h3>Amount To Pay</h3>
                                     </div>
-                                    <div class="col-md-1 col-centered">
-                                        <p class="make-payment__schedule__button-group__OR">OR</p>
-                                    </div>
-                                    <div class="col-md-3 col-centered">
-                                        <button type="button" class="btn btn-primary make-payment__schedule__button">Repayment Options</button>
+                                    <div class="col-md-4 col-md-offset-1">
+                                        <h4>454.06</h4>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.panel -->
-                    <div id="make-payment__section-other-opts" class="panel panel-default">
-                        <div class="panel-heading">
-                            <i class="fa fa-money fa-fw"></i> Other Payment Options
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div class="make-payment__other-opts__about">
-                                <p>Below are the other possible payent options that MyServicer provides so you can make a payment
-                                    anytime, anywhere....</p>
-                            </div>
-                            <div class="make-payment__other-opts__options">
-                                <div class="row make-payment__other-opts__option">
-                                    <div class="col-md-2">
-                                        <i class="fa fa-clock-o fa-5x fa-green"></i>
+                                <div id="process-payment__main-form__form__pay-date" class="row">
+                                    <div class="col-md-4">
+                                        <h3>Payment Date</h3>
                                     </div>
-                                    <div class="col-md-10 make-payment__other-opts__option-txt">
-                                        <h3>Auto Debit</h3>
-                                        <p>Never miss a payment. When you sign up for auto debit, your payment is automatically
-                                            deducted from the bank account of your choosing. Plus, you could even save on
-                                            your interest rate* while your account is in an active repayment status!
-                                            <p>
-                                                <a href=#>Sign Up For Auto Debit Program</a>
+                                    <div class="col-md-4 col-md-offset-1">
+                                        <input type="date" type="date" value="2017-08-11">
                                     </div>
                                 </div>
-                                <div class="row make-payment__other-opts__option">
-                                    <div class="col-md-10 make-payment__other-opts__option-txt">
-                                        <h3>Via Mail</h3>
-                                        <p>Mail your payment using the address located on your statement. Make sure that you
-                                            include your MyServicer account number, including the “D, J, or E”, so that your
-                                            payment is processed in a timely manner and correctly applied to your accounts.</p>
-                                        <a href=#>How To: Mail Your Payment</a>
-
+                                <div id="process-payment__main-form__form__pay-acct-type" class="row">
+                                    <div class="col-md-12">
+                                        <h3>Account Type</h3>
                                     </div>
-                                    <div class="col-md-2">
-                                        <i class="fa fa-envelope fa-green fa-5x"></i>
-                                    </div>
-                                </div>
-                                <div class="row make-payment__other-opts__option">
-                                    <div class="col-md-2">
-                                        <i class="fa fa-university fa-green fa-5x"></i>
-                                    </div>
-                                    <div class="col-md-10 make-payment__other-opts__option-txt">
-                                        <h3>Bank Online Pay</h3>
-                                        <p>Use your bank's online bill pay service (make sure they don't charge a fee). You'll
-                                            just need to give them the Payee (MyServicer), your account number, and the payment
-                                            address, which is the P.O. box address on the bottom of your statement.
-                                            <p>
-                                        <a href=#>How To: Set Up Bank Auto Bill Pay</a>
-
-                                    </div>
-                                </div>
-                                <div class="row make-payment__other-opts__option">
-                                    <div class="col-md-10 make-payment__other-opts__option-txt">
-                                        <h3>Via Phone</h3>
-                                        <p>Call us at 888.486.4722 and make a payment through our automated phone system or
-                                            with a Customer Service Representative.</p>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <i class="fa fa-phone fa-green fa-5x"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /.panel-body -->
-                        </div>
-                    </div>
-                    <!-- /.panel -->
-                </div>
-                <!-- /.col-lg-8 -->
-                <div class="col-lg-4">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <i class="fa fa-bar-chart-o fa-fw"></i> Your Payment History
-                            <div class="pull-right">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
-                                        Actions
-                                        <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu pull-right" role="menu">
-                                        <li><a href="#">Action</a>
-                                        </li>
-                                        <li><a href="#">Another action</a>
-                                        </li>
-                                        <li><a href="#">Something else here</a>
-                                        </li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Separated link</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="table-responsive">
-                                        <table class="table table-bordered table-hover table-striped">
-                                            <thead>
-                                                <tr>
-                                                    <th>#</th>
-                                                    <th>Date</th>
-                                                    <th>Time</th>
-                                                    <th>Amount</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>3326</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>3:29 PM</td>
-                                                    <td>$321.33</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3325</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>3:20 PM</td>
-                                                    <td>$234.34</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3324</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>3:03 PM</td>
-                                                    <td>$724.17</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3323</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>3:00 PM</td>
-                                                    <td>$23.71</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3322</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>2:49 PM</td>
-                                                    <td>$8345.23</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3321</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>2:23 PM</td>
-                                                    <td>$245.12</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3320</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>2:15 PM</td>
-                                                    <td>$5663.54</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3319</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>2:13 PM</td>
-                                                    <td>$943.45</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <!-- /.table-responsive -->
-                                </div>
-                               
-
-                                <!-- /.col-lg-8 (nested) -->
-                            </div>
-                            <!-- /.row -->
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                     <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <i class="fa fa-bar-chart-o fa-fw"></i> Your Progress
-                                        <div class="pull-right">
-                                            <div class="btn-group">
-                                                <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
-                                        Actions
-                                        <span class="caret"></span>
-                                    </button>
-                                                <ul class="dropdown-menu pull-right" role="menu">
-                                                    <li><a href="#">Action</a>
-                                                    </li>
-                                                    <li><a href="#">Another action</a>
-                                                    </li>
-                                                    <li><a href="#">Something else here</a>
-                                                    </li>
-                                                    <li class="divider"></li>
-                                                    <li><a href="#">Separated link</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
+                                    <div class="col-md-6">
+                                        <div class="col-md-4">
+                                            <input type="radio" id="genderChoice1" name="acct-type" value="Checking" selected="true">
+                                            <label for="genderChoice1">Checking</label>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input type="radio" id="genderChoice2" name="acct-type" value="Savings" >
+                                            <label for="genderChoice2">Savings</label>
                                         </div>
                                     </div>
-                                    <div class="panel-body">
-                                        <div id="morris-area-chart"></div>
-                                    </div>
-                                    <!-- /.panel-body -->
                                 </div>
+                                <div id="process-payment__main-form___pay-acct__bank-info">
+                                    <h3>Banking Information</h3>
+                                    <div class="col-md-12 row">
+                                        <div class="col-md-6">
+                                            <div class="col-md-4">
+                                                <label>Routing Number</label>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <p>10000002345678876</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            &nbsp;
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 row">
+                                        <div class="col-md-6">
+                                            <div class="col-md-4">
+                                                <label>Banking Institution</label>
+                                            </div>
+                                            <div class="col-md-4">
+                                               <p>Bank of 'Merica</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            &nbsp;
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-12 row">
+                                        <div class="col-md-6">
+                                            <div class="col-md-4">
+                                                <label>Name On Account</label>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <p>Rasheeda Q Jones</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            &nbsp;
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 row">
+                                        <div class="col-md-6">
+                                            <div class="col-md-4">
+                                                <label>Account Nickname</label>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <p>BOM</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            &nbsp;
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="process-payment__main-form__submit">
+                                <div class="col-md-6 col-md-offset-3 text-center">
+                                    <button type="button" class="btn btn-green btn-lg centered my-auto">Proceed To Review and Confimation</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col-lg-8 -->
                 </div>
-                <!-- /.panel -->
-                <!-- /.panel-footer -->
+                <!-- /.panel .chat-panel -->
+                <!-- /.col-lg-4 -->
             </div>
-            <!-- /.panel .chat-panel -->
         </div>
-        <!-- /.col-lg-4 -->
-    </div>
-    <!-- /.row -->
+        <!-- /.row -->
     </div>
     <!-- /#page-wrapper -->
 

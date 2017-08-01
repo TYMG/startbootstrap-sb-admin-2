@@ -42,6 +42,9 @@ COLORS
   background-color: #8CE263;
   color: white;
 }
+.background-blue {
+  background-color: #C4E3FF;
+}
 #wrapper {
   width: 100%;
 }
@@ -461,7 +464,6 @@ table.dataTable thead .sorting:after {
 /* Declare heights because of positioning of img element */
 .carousel .item {
   height: 500px;
-  background-color: #777;
 }
 .carousel-inner > .item > img {
   position: absolute;
@@ -526,70 +528,15 @@ table.dataTable thead .sorting:after {
     border-left-width: 0;
   }
 }
-/*
+/*******************
 
-Profile Settings
+Payment Nav Bar
 
-*/
-.career-settings__section {
-  margin: 0 auto;
-}
-.career-settings__button {
-  padding: 1%;
-}
-/***************** 
-
-Make A Payment 
-
-******************/
-.make-payment__schedule__amt-due-fields {
-  padding-bottom: 5%;
-}
-.make-payment__schedule__amt-due-field {
-  text-align: center;
-  width: 300px;
-}
-.make-payment__schedule__amt-due {
-  margin: 1% 0;
-}
-.make-payment__schedule__button {
-  width: 205px;
-  height: 45px;
-  font-size: 15px;
-  font-weight: bold;
-}
-.make-payment__schedule__button-group {
-  margin: 0 auto;
-  line-height: normal;
-}
-.make-payment__schedule__button-group__OR {
-  font-size: 30px;
-}
-.make-payment__other-opts__about {
-  font-size: 25px;
-  margin: 5% 2%;
-}
-.make-payment__other-opts__options {
-  margin: 1%;
-}
-.make-payment__other-opts__option i {
-  margin-top: 20%;
-}
-.make-payment__other-opts__option-txt > p {
-  text-align: left;
-}
-/******************************
-
-PROCESS A PAYMENT
-
-*******************************/
-#process_payment__main {
-  padding: 1%;
-}
+*******************/
 .steps {
   padding: 0;
   overflow: hidden;
-  margin: 0;
+  margin: 0 0 1% 0;
 }
 .steps a {
   color: white;
@@ -663,17 +610,10 @@ PROCESS A PAYMENT
 }
 /* Current */
 .steps li.current {
-  background-color: #C36615;
+  background-color: cornflowerblue;
 }
 .steps li.current::after {
-  border-left-color: #C36615;
-}
-/* Following */
-.steps li.current ~ li {
-  background-color: #EBEBEB;
-}
-.steps li.current ~ li::after {
-  border-left-color: #EBEBEB;
+  border-left-color: cornflowerblue;
 }
 /* Hover for completed and current */
 .steps li:hover {
@@ -681,6 +621,66 @@ PROCESS A PAYMENT
 }
 .steps li:hover::after {
   border-left-color: #00D1BC;
+}
+/*************************
+
+Profile Settings
+
+*********************/
+.career-settings__section {
+  margin: 0 auto;
+}
+.career-settings__button {
+  padding: 1%;
+}
+/***************** 
+
+Make A Payment 
+
+******************/
+.make-payment__schedule__amt-due-fields {
+  padding-bottom: 5%;
+}
+.make-payment__schedule__amt-due-field {
+  text-align: center;
+  width: 300px;
+}
+.make-payment__schedule__amt-due {
+  margin: 1% 0;
+}
+.make-payment__schedule__button {
+  width: 205px;
+  height: 45px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.make-payment__schedule__button-group {
+  margin: 0 auto;
+  line-height: normal;
+}
+.make-payment__schedule__button-group__OR {
+  font-size: 30px;
+}
+.make-payment__other-opts__about {
+  font-size: 25px;
+  margin: 5% 2%;
+}
+.make-payment__other-opts__options {
+  margin: 1%;
+}
+.make-payment__other-opts__option i {
+  margin-top: 20%;
+}
+.make-payment__other-opts__option-txt > p {
+  text-align: left;
+}
+/******************************
+
+PROCESS A PAYMENT
+
+*******************************/
+#process_payment__main {
+  padding: 1%;
 }
 #process_payment__hr {
   border: 0;
@@ -690,7 +690,20 @@ PROCESS A PAYMENT
 }
 #process-payment__main-form-acct-details {
   background: cornflowerblue;
+  font-weight: bold;
   height: 70px;
+}
+#process-payment__main-form__amt-due {
+  height: 75px;
+}
+#process-payment__main-form__amt-due div label {
+  font-size: 20px;
+}
+#process-payment__main-form__amt-due div p {
+  font-size: 15px;
+}
+.past-due-amount {
+  color: red;
 }
 #process-payment__main-form-acct-details > p {
   padding: 1% 0;
@@ -727,4 +740,97 @@ PROCESS A PAYMENT
 }
 #process-payment__main-form__submit {
   height: 50px;
+}
+/******************************
+
+CONFIRM A PAYMENT
+
+*******************************/
+#confirm_payment__main {
+  padding: 1%;
+  height: 850px;
+}
+/***************************
+
+VIRTUAL CLASSROOM
+
+****************************/
+#virtual-classroom__main {
+  height: 1500px;
+}
+#classroom-home__suggested-content {
+  text-align: center;
+}
+/* Declare heights because of positioning of img element */
+.classroom-carousel {
+  height: 200px;
+}
+.classroom-carousel .item {
+  height: 200px;
+}
+/* carousel */
+.media-carousel {
+  margin-bottom: 0;
+  padding: 0 40px 30px 40px;
+  margin-top: 30px;
+}
+/* Previous button  */
+.media-carousel .carousel-control.left {
+  left: -12px;
+  background-image: none;
+  background: none repeat scroll 0 0 #222222;
+  border: 4px solid #FFFFFF;
+  border-radius: 23px 23px 23px 23px;
+  height: 40px;
+  width: 40px;
+  margin-top: 30px;
+}
+/* Next button  */
+.media-carousel .carousel-control.right {
+  right: -12px !important;
+  background-image: none;
+  background: none repeat scroll 0 0 #222222;
+  border: 4px solid #FFFFFF;
+  border-radius: 23px 23px 23px 23px;
+  height: 40px;
+  width: 40px;
+  margin-top: 30px;
+}
+/* Changes the position of the indicators */
+.media-carousel .carousel-indicators {
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+/* Changes the colour of the indicators */
+.media-carousel .carousel-indicators li {
+  background: #c0c0c0;
+}
+.media-carousel img {
+  width: 250px;
+  height: 100px;
+}
+/* End carousel */
+hr.virtual-classroom__hr {
+  border-color: black;
+}
+#virtual-classroom__general-content {
+  height: 500px;
+}
+div#virtual-classroom__general-content > h2 {
+  text-align: center;
+}
+#virtual-classroom__general-content__button-group {
+  padding: 1%;
+  height: 250px;
+}
+#general-content__button-col {
+  height: 100px;
+}
+a.general-content__button {
+  height: 100px;
+  width: 50px;
+  font-size: 15px;
+  border: solid 2px #8CE263;
 }
