@@ -330,17 +330,124 @@
                                 </div>
                             </div>
                             <div id="process-payment__main-form__pay-by">
-                                Account or Group
+                                <div class="btn-group" role="group" aria-label="...">
+                                    <button type="button" class="btn btn-default">Left</button>
+                                    <button type="button" class="btn btn-default">Middle</button>
+                                    <button type="button" class="btn btn-default">Right</button>
+                                </div>
+                            </div>
+                            <div id="process-payment__main-form__pay-by-acct-grp">
+                                <div id="process-payment__pay-by-acct-grp__grp-A" class="acct-grp acct-grp__top">
+                                    <div class="col-md-1">
+                                        <label> Group A</label>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6">
+                                                <label> Interest Rate</label>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6">
+                                                4.5%
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="row">
+                                            <div class="col-md-7 col-sm-6">
+                                                <label>Accrued Balance</label>
+                                            </div>
+                                            <div class="col-md-5 col-sm-6">
+                                                $450.08
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="col-md-7 col-sm-6">
+                                            <label> Current Balance</label>
+                                        </div>
+                                        <div class="col-md-5 col-sm-6">
+                                            $3400.23
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label>Payment Amount</label>
+                                        <input type="text" name="payment-amount" placeholder="Amount">
+                                    </div>
+                                </div>
+                                <div id="process-payment__pay-by-acct-grp__grp-B" class="acct-grp acct-grp__bottom">
+                                    <div class="col-md-1">
+                                        <label> Group B </label>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6">
+                                                <label>Interest Rate</label>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6">
+                                                4.5%
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="row">
+                                            <div class="col-md-7 col-sm-6">
+                                                <label>Accrued Balance</label>
+                                            </div>
+                                            <div class="col-md-5 col-sm-6">
+                                                $450.08
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="col-md-7 col-sm-6">
+                                            <label> Current Balance </label>
+                                        </div>
+                                        <div class="col-md-5 col-sm-6">
+                                            $3400.23
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label>Payment Amount</label>
+                                        <input type="text" name="payment-amount" placeholder="Amount">
+                                    </div>
+                                </div>
                             </div>
                             <div id="process-payment__main-form__form">
-                                <div id="process-payment__main-form__form__pay-amt">
-                                    Amount To Pay
+                                <div id="process-payment__main-form__form__pay-amt" class="row">
+                                    <div class="col-md-4">
+                                        <h4>Amount To Pay</h4>
+                                    </div>
+                                    <div class="col-md-4 col-md-offset-4">
+                                        <h4>454.06</h4>
+                                    </div>
                                 </div>
-                                <div id="process-payment__main-form__form__pay-date">
-                                    Payment Date
+                                <div id="process-payment__main-form__form__pay-date" class="row">
+                                    <div class="col-md-4">
+                                        <h4>Payment Date</h4>
+                                    </div>
+                                    <div class="col-md-4 col-md-offset-4">
+                                        <input type="date" type="date" value="2017-08-11">
+                                    </div>
                                 </div>
-                                <div id="process-payment__main-form__form__pay-acct"></div>
-                                Checking or Savings
+                                <div id="process-payment__main-form__form__pay-acct" class="row">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h4>Account Type</h4>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="col-md-6">
+                                                <input type="radio" id="genderChoice1" name="gender" value="male">
+                                                <label for="genderChoice1">Checking</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="radio" id="genderChoice2" name="gender" value="female">
+                                                <label for="genderChoice2">Savings</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div id="process-payment__main-form___pay-acct__info">
                                     Routing Number Banking Institution Name On the Account
                                 </div>
