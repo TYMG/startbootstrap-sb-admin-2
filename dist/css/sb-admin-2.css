@@ -834,3 +834,9 @@ a.general-content__button {
   font-size: 15px;
   border: solid 2px #8CE263;
 }
+button.general-content__button {
+  height: 100px;
+  width: 50px;
+  font-size: 15px;
+  border: solid 2px #8CE263;
+}
