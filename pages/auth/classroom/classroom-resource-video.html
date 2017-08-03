@@ -14,6 +14,10 @@
     <!-- Bootstrap Core CSS -->
     <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Bootstrap Star Rating -->
+    <link href="../../../vendor/bootstrap-star-rating/star-rating.css" media="all" rel="stylesheet" type="text/css" />
+
+
     <!-- MetisMenu CSS -->
     <link href="../../../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
 
@@ -290,19 +294,52 @@
                 <!-- /.row -->
                 <div id="vc-resource__video" class="col-lg-12">
                     <div id="vc-resource__video-image" class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            test
+                        <div id="video-image" class="col-md-8 col-md-offset-2">
+                            <img alt="" class="img-responsive" src="../../../images/classroom/resource-video/video-screenshot.PNG">
                         </div>
                     </div>
                     <div id="vc-resource__video-about-review" class="row">
-                        <div id="vc-resource__video-about" >
-                            About the Video
+                        <div id="vc-resource__video-about">
+                            <h3>
+                                About the Video:
+                            </h3>
+                            <div>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam elementum lectus a ipsum volutpat pretium. Vestibulum feugiat
+                                sem quam, id convallis purus rhoncus in. Sed imperdiet sapien id neque egestas, nec tincidunt
+                                eros consequat. Pellentesque hendrerit consectetur risus, in iaculis tellus rhoncus vitae.
+                                Vivamus dictum consectetur neque, vulputate tristique leo vehicula sed. Vestibulum faucibus
+                                ut massa sed lobortis. Aliquam aliquam ligula et ullamcorper tincidunt. Curabitur et ligula
+                                sollicitudin, pulvinar neque ultricies, consectetur magna. Cras interdum ipsum eu magna luctus,
+                                et feugiat magna laoreet. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                                per inceptos himenaeos.
+                            </div>
                         </div>
                         <div id="vc-resource__video-review__toggle">
                             <button href="#" data-toggle="collapse" data-target="#vc-resource__video-review__main">Leave a comment and review</button>
                         </div>
-                         <div id="vc-resource__video-review__main" class="collapse">
-                                HERES WHERE YOU WOULD REVIEW THIS MATERIAL
+                        <div id="vc-resource__video-review__main" class="collapse">
+                            <div>
+                                <label>Rate This Video:</label>
+                                <input id="input-7-xs" class="rating rating-loading" value="1" data-min="0" data-max="5" data-step="0.5" data-size="xs">
+                            </div>
+                            <div>
+                                <label>Refer Video To Others?:</label>
+                                <br>
+                                <select name="select"> <!--Supplement an id here instead of using 'name'-->
+                                <option value="value1" selected>Yes</option> 
+                                <option value="value2" >No</option>
+                            </select>
+                            </div>
+                            <div>
+                                <label>Intended Audience:</label>
+                                <p>Select who would best benefit from this video</p>
+                                <select name="select"> <!--Supplement an id here instead of using 'name'-->
+                                    <option value="value1" selected>First Time Borrowers</option> 
+                                    <option value="value2" >Borrowers With Active Loans</option>
+                                    <option value="value2" >Parents That Are Borrowers</option>
+                                    <option value="value3" >All (Anyone)</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -323,6 +360,9 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="../../../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap Start Rating -->
+    <script src="../../../vendor/bootstrap-star-rating/star-rating.min.js"></script>
 
     <!-- Metis Menu Plugin JavaScript -->
     <script src="../../../vendor/metisMenu/metisMenu.min.js"></script>

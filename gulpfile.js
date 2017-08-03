@@ -77,6 +77,9 @@ gulp.task('copy', function() {
     gulp.src(['bower_components/datatables-responsive/css/*', 'bower_components/datatables-responsive/js/*'])
         .pipe(gulp.dest('vendor/datatables-responsive'))
 
+    gulp.src(['bower_components/bootstrap-star-rating/css/*', 'bower_components/bootstrap-star-rating/js/*', 'bower_components/bootstrap-star-rating/img/*'])
+        .pipe(gulp.dest('vendor/bootstrap-star-rating'))
+
     gulp.src(['bower_components/flot/*.js'])
         .pipe(gulp.dest('vendor/flot'))
 
