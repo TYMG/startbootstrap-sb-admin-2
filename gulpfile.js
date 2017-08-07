@@ -80,6 +80,9 @@ gulp.task('copy', function() {
     gulp.src(['bower_components/bootstrap-star-rating/css/*', 'bower_components/bootstrap-star-rating/js/*', 'bower_components/bootstrap-star-rating/img/*'])
         .pipe(gulp.dest('vendor/bootstrap-star-rating'))
 
+    gulp.src(['bower_components/animate.css/*'])
+        .pipe(gulp.dest('vendor/animate.css'))
+
     gulp.src(['bower_components/flot/*.js'])
         .pipe(gulp.dest('vendor/flot'))
 

@@ -14,6 +14,9 @@
     <!-- Bootstrap Core CSS -->
     <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+     <!-- Animate CSS -->
+    <link href="../../vendor/animate.css/animate.min.css" rel="stylesheet">
+
     <!-- MetisMenu CSS -->
     <link href="../../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
 
@@ -192,7 +195,7 @@
                 <!-- /.dropdown -->
             </ul>
 
-             <div class="navbar-default sidebar" role="navigation">
+            <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
                         <li class="sidebar-search">
@@ -208,8 +211,8 @@
                         </li>
                         <li>
                             <a href="tables.html"><i class="fa fa-list-alt fa-fw"></i> Loan Information</a>
-                        </li>                 
-                           <li>
+                        </li>
+                        <li>
                             <a href="#"><i class="fa fa-money fa-fw"></i> Make A Payment<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
@@ -251,11 +254,11 @@
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
-                      
+
                         <li>
                             <a href="tables.html"><i class="fa fa-calculator fa-fw"></i> Repayment</a>
                         </li>
-                        
+
                         <li>
                             <a href="#"><i class="fa fa-university fa-fw"></i> Classroom<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
@@ -312,7 +315,7 @@
                         </a>
                     </div>
                 </div>
-                 <div class="col-lg-3 col-lg-offset-1 col-md-6">
+                <div class="col-lg-3 col-lg-offset-1 col-md-6">
                     <div class="panel panel-red">
                         <div class="panel-heading">
                             <div class="row">
@@ -355,7 +358,7 @@
                         </a>
                     </div>
                 </div>
-               
+
 
 
             </div>
@@ -409,7 +412,8 @@
                                             </p>
                                         </div>
                                         <div class="timeline-body">
-                                            <p>Hey it seems like you missed a couple payments. Did you know people who miss their payments are at higher risk to default on their loans.
+                                            <p>Hey it seems like you missed a couple payments. Did you know people who miss
+                                                their payments are at higher risk to default on their loans.
                                             </p>
                                             <p>Would you like some resources to guide you take the next step in your journey?</p>
                                             <br>
@@ -767,7 +771,36 @@
             <!-- /.col-lg-4 -->
         </div>
         <!-- /.row -->
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Your Journey Since You've Been Gone</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="">
+                            <Label>Number of Payments: </Label><p>3</p>
+                        </div>
+                        <div class="">
+                            <Label>5 New Article Suggestions! </Label>
+                        </div>
+                         <div class="animated tada">
+                            <Label>Congratulations You Paid of 50% of Your Loans </Label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+
+
     <!-- /#page-wrapper -->
     <!-- /#wrapper -->
 
@@ -776,7 +809,14 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="../../vendor/bootstrap/js/bootstrap.min.js"></script>
+ 
+    <script type="text/javascript">
+        $(document).ready(function () {       
+            $('#myModal').on('show.bs.modal', function () {
 
+            }).modal('show');
+        });
+    </script>
     <!-- Metis Menu Plugin JavaScript -->
     <script src="../../vendor/metisMenu/metisMenu.min.js"></script>
 
@@ -787,6 +827,8 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="../../dist/js/sb-admin-2.js"></script>
+
+
 
 </body>
 
