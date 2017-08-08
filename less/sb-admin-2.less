@@ -10,6 +10,12 @@ VARIABLES
 @puke-green:#8CE263;
 @background-blue:#C4E3FF;
 @basic-blue: cornflowerblue;
+ 
+/********************/
+@silver:#B2B1BC;
+@gold:#F2E468;
+@bronze:#EACA7C; 
+
 
 // Global Styles
 
@@ -754,6 +760,50 @@ Profile Settings
 
 *********************/
 
+.panel_text{
+    font-size:20px;
+    margin: 1% 0;
+}
+
+ p.heading{
+    font-size:15px;
+}
+
+#ps__badges-row {
+    width: 100%;
+}
+
+.badge-item {
+    margin: 0 auto;
+    width: 75%;
+}
+
+.badge-item > div {
+    width: 25%;
+    margin: 0 auto;
+}
+
+.badge-item  p {
+    font-weight:bold;
+    text-align: center;
+}
+
+.badge-item i.bronze {
+   color: @bronze;
+}
+
+.badge-item i.silver {
+     color: @silver;
+}
+
+.badge-item i.gold {
+   color: @gold;
+}
+
+#ps__badges-row > div{
+    width: 250px;
+}
+
 .career-settings__section{
     margin: 0 auto;
 }
@@ -762,7 +812,9 @@ Profile Settings
     padding: 1%
 }
 
-
+#ps__main p{
+    font-size:15px;
+}
 /***************** 
 
 Make A Payment 

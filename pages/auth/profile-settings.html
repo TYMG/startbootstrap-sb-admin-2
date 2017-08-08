@@ -14,6 +14,9 @@
     <!-- Bootstrap Core CSS -->
     <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+     <!-- Animate CSS -->
+    <link href="../../vendor/animate.css/animate.min.css" rel="stylesheet">
+
     <!-- MetisMenu CSS -->
     <link href="../../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
 
@@ -35,8 +38,7 @@
 <body>
 
     <div id="wrapper">
-
-        <!-- Navigation -->
+ <!-- Navigation -->
         <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -50,8 +52,8 @@
             <!-- /.navbar-header -->
 
             <ul class="nav navbar-top-links navbar-right">
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="dashboard.html">
+                <li>
+                    <a href="dashboard.html">
                         <i class="fa fa-tachometer fa-fw"></i>
                     </a>
                 </li>
@@ -188,40 +190,202 @@
                 </li>
                 <!-- /.dropdown -->
             </ul>
-            <!-- /.navbar-top-links -->
-        </nav>
 
-        <div id="page-wrapper">
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+                        <li>
+                            <a href="tables.html"><i class="fa fa-list-alt fa-fw"></i> Loan Information</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-money fa-fw"></i> Make A Payment<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#">Online Payment</a>
+                                </li>
+                                <li>
+                                    <a href="#">Set Up Auto Payment</a>
+                                </li>
+                                <li>
+                                    <a href="#">Other Forms of Payment <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">Bank Auto Pay</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Via Phone</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Via Mail</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Counseling<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="flot.html">Flot Charts</a>
+                                </li>
+                                <li>
+                                    <a href="morris.html">Morris.js Charts</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+
+                        <li>
+                            <a href="tables.html"><i class="fa fa-calculator fa-fw"></i> Repayment</a>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fa fa-university fa-fw"></i> Classroom<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="panels-wells.html">Videos</a>
+                                </li>
+                                <li>
+                                    <a href="buttons.html">Articles</a>
+                                </li>
+                                <li>
+                                    <a href="notifications.html">Forums</a>
+                                </li>
+                                <li>
+                                    <a href="typography.html">Calculators</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+    
+        <div id="dashboard-page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">My Profile</h1>
+                    <h1 class="page-header dashboard-header">Profile Settings</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->
-            <div class="row">
+            <div id="ps__main" class="row">
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Badges
+                            <h3 class="heading">Badges</h3>
                         </div>
-                        <div style="padding:20px">
+                        <div class="panel-body">
                             <div class="row">
-                                <div class="col-xs-3">
-                                    <i class="fa fa-trophy fa-5x"></i><br>
-                                    <label>Ask A Question</label>
-                                </div>
-                                <div class="col-xs-3">
-                                    <i class="fa fa-star fa-5x"></i><br>
-                                    <label>Frequent Feedback</label>
-                                </div>
-                                <div class="col-xs-3">
-                                    <i class="fa fa-trophy fa-5x"></i><br>
-                                    <label>25% Paid Off</label>
-                                </div>
-                                <div class="col-xs-3">
-                                    <i class="fa fa-film fa-5x"></i><br>
-                                    <label>20 Videos Watched</label>
+                                <div class="col-lg-12">
+                                    <div class="panel_text">
+                                        <p> What is a badge? A badge is a mark of achievement within the MyServicer world. Badges
+                                            are given as rewards for completing tasks or achieving important goals and milestones.
+                                            The badges are to help users easily see how they are doing in addition to giving
+                                            them a sense of personal achievement as they earn badges.</p>
+                                        <p>Not all badges are created equal, and some will be harder to achieve. Badges come
+                                            in 4 colors:
+                                            <ul>
+                                                <li>Black - Basic</li>
+                                                <li>Bronze - Level 1</li>
+                                                <li>Silver - Level 2</li>
+                                                <li>Gold - Level 3</li>
+                                            </ul>
+                                        </p>
+
+
+                                    </div>
+                                    <div class="panel_text">
+                                        <h3 style="text-align: center">My badges</h3>
+                                    </div>
+                                    <div class="col-lg-12" style="padding:20px">
+                                        <div class="col-xs-3">
+                                            <div class="badge-item">
+                                                <div>
+                                                    <i class="fa fa-trophy fa-5x"></i><br>
+                                                </div>
+                                                <p>Ask A Question</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <div class="badge-item">
+                                                <div>
+                                                    <i class="fa fa-thumbs-up fa-5x"></i><br>
+                                                </div>
+                                                <p>No Missed Payments for 5 Months</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <div class="badge-item">
+                                                <div>
+                                                    <i class="fa fa-trophy fa-5x bronze"></i><br>
+                                                </div>
+                                                <p>25% Paid Off</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <div class="badge-item">
+                                                <div>
+                                                    <i class="fa fa-film fa-5x silver"></i><br>
+                                                </div>
+                                                <p>20 Videos Watched</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <div class="badge-item">
+                                                <div>
+                                                    <i class="fa fa-bank fa-5x bronze"></i><br>
+                                                </div>
+                                                <p>Set-Up Auto Bill Pay</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <div class="badge-item">
+                                                <div>
+                                                    <i class="fa fa-star-half-empty fa-5x gold"></i><br>
+                                                </div>
+                                                <p>Review or Comment Over 20 Classroom Resources</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <h4>Highest Ranked Badges</h4>
+                                        </div>
+                                        <div class="col-xs-3 col-xs-offset-3">
+                                            <div class="badge-item animated pulse">
+                                                <div>
+                                                    <i class="fa fa-hand-peace-o fa-5x gold"></i><br>
+                                                </div>
+                                                <p>Paid Off All Loans!!</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <div class="badge-item animated pulse">
+                                                <div>
+                                                    <i class="fa fa-graduation-cap fa-5x gold"></i><br>
+                                                </div>
+                                                <p>Graduation!!</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <!-- /.panel-body -->
@@ -233,7 +397,48 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            My Personal Assistant
+                            <h3> Financial Goals </h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="panel_text">
+                                        Regardless of what life stage you are in, you are likely to have some short and long term personal financial goals. Setting
+                                        tangible and realistic goals, following them, and tracking your progress is the key
+                                        to success in achieving all of your financial goals. Determining what your short-term,
+                                        mid-term, and long-term personal financial goals are is the first step. Making a
+                                        commitment means you’re seeing it through to the end
+                                    </div>
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <label>How Quickly Do You Intend To Pay Off The Loans?</label>
+                                            <select class="form-control">
+                                                <option>1-5 Years</option>
+                                                <option>5-10 Years</option>
+                                                <option>15-20 Years</option>
+                                                <option>Never TBH</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Will you return to back to school eventually?</label>
+                                            <select class="form-control">
+                                                <option>No</option>
+                                                <option>Yes</option>
+                                                <option>I'm Not Sure</option>
+                                            </select>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- /.row (nested) -->
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3>My Personal Assistant</h3>
                         </div>
                         <div style="padding:20px">
                             <div class="row">
@@ -247,46 +452,46 @@
                                     <label>Motto:</label> "Always Here And Happy to Help!!"
                                 </div>
                                 <div class="form-group">
-                                            <label>Prefferred Visual Representations</label>
-                                            <div class="checkbox">
-                                                <label>
+                                    <label>Prefferred Visual Representations</label>
+                                    <div class="checkbox">
+                                        <label>
                                                     <input type="checkbox" value="">Bar Graphs
                                                 </label>
-                                            </div>
-                                            <div class="checkbox">
-                                                <label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
                                                     <input type="checkbox" value="">Line Graphs
                                                 </label>
-                                            </div>
-                                            <div class="checkbox">
-                                                <label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
                                                     <input type="checkbox" value="">I Like It All
                                                 </label>
-                                            </div>
-                                        </div>
+                                    </div>
+                                </div>
                                 <div class="form-group">
-                                            <label>Prefferred Media Content</label>
-                                            <div class="checkbox">
-                                                <label>
+                                    <label>Prefferred Media Content</label>
+                                    <div class="checkbox">
+                                        <label>
                                                     <input type="checkbox" value="">Videos
                                                 </label>
-                                            </div>
-                                            <div class="checkbox">
-                                                <label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
                                                     <input type="checkbox" value="">Reading (Articles, Studies, Etc)
                                                 </label>
-                                            </div>
-                                            <div class="checkbox">
-                                                <label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
                                                     <input type="checkbox" value="">Podcasts
                                                 </label>
-                                            </div>
-                                              <div class="checkbox">
-                                                <label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
                                                     <input type="checkbox" value="">Any Way I Can Get It
                                                 </label>
-                                            </div>
-                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- /.panel-body -->
                         </div>
@@ -298,21 +503,21 @@
                     <div class="col-lg-12">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                About Me
+                                <h3>About Me</h3>
                             </div>
                             <div class="panel-body">
                                 <div class="row">
                                     <div class="col-lg-7">
-                                        <h1>Life Changes</h1>
                                         <div class="row">
                                             <div class="col-lg-12">
-                                                <h3 class="page-header">Life Happens... We get that</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam, ligula id congue condimentum, dui lorem porttitor leo, et euismod turpis augue non tellus. Nam maximus eros sit amet mi lobortis, et condimentum tortor luctus. Integer tristique mi mi, nec consectetur odio pulvinar vitae. Nunc eget enim luctus libero venenatis cursus nec ac nisi. Quisque rutrum ut est facilisis sagittis. Donec ac lectus vitae mauris facilisis pellentesque sed a quam. </p>
                                             </div>
                                             <!-- /.col-lg-12 -->
                                         </div>
                                         <form role="form">
                                             <div class="form-group">
                                                 <div class="form-group">
+                                                    <label>Life Event:</label>
                                                     <select class="form-control">
                                                 <option>I Got Married!!</option>
                                                 <option>I Got Divorced!!</option>
@@ -381,12 +586,11 @@
                     <div class="col-lg-12">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                Basic Form Elements
+                                <h3>Career Change</h3>
                             </div>
                             <div class="panel-body">
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <h1>Career Change</h1>
                                         <form role="form">
                                             <div class="form-group">
                                                 <div class="form-group">
