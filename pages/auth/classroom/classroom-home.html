@@ -14,6 +14,11 @@
     <!-- Bootstrap Core CSS -->
     <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+
+    <!-- Animate CSS -->
+    <link href="../../../vendor/animate.css/animate.min.css" rel="stylesheet">
+
+
     <!-- MetisMenu CSS -->
     <link href="../../../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
 
@@ -309,15 +314,15 @@
                                     <div class="item active">
                                         <div class="row">
                                             <div class="col-md-4">
-                                                <a class="thumbnail" href="#"><img alt="" src="../../../images/classroom/thumb-myths-about-financial-aid.jpg"></a>
+                                                <a class="thumbnail" href="classroom-resource-video.html"><img alt="" src="../../../images/classroom/thumb-myths-about-financial-aid.jpg"></a>
                                                 <label>Myths About Financial Aid</label>
                                             </div>
                                             <div class="col-md-4">
-                                                <a class="thumbnail" href="#"><img alt="" src="../../../images/classroom/thumb-overview-financial-aid-process.jpg"></a>
+                                                <a class="thumbnail" href="classroom-resource-video.html"><img alt="" src="../../../images/classroom/thumb-overview-financial-aid-process.jpg"></a>
                                                 <label>Overview of the Financial Aid Process</label>
                                             </div>
                                             <div class="col-md-4">
-                                                <a class="thumbnail" href="#"><img alt="" src="../../../images/classroom/thumb-budgeting.jpg"></a>
+                                                <a class="thumbnail" href="classroom-resource-video.html"><img alt="" src="../../../images/classroom/thumb-budgeting.jpg"></a>
                                                 <label>Budgeting</label>
                                             </div>
                                         </div>
@@ -387,23 +392,33 @@
                             </div>
                         </div>
                     </div>
-                    <div id="virtual-classroom__search">
+                    <div id="virtual-classroom__search" class="col-lg-12">
                         <div class="col-md-8 col-md-offset-2">
-                            <div class="row">
-                                <!-- /.col-lg-6 -->
-                              
-                                <div class="col-lg-12">
-                                      <h3>Topic Search</h3>
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Search for...">
-                                        <span class="input-group-btn">
+                            <!-- /.col-lg-6 -->
+
+                            <div class="col-lg-12">
+                                <h3>Topic Search</h3>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search for...">
+                                    <span class="input-group-btn">
         <button class="btn btn-default" type="button">Go!</button>
       </span>
-                                    </div>
-                                    <!-- /input-group -->
                                 </div>
-                                <!-- /.col-lg-6 -->
+                                <!-- /input-group -->
+                                <div id="virtual-classroom__tt">
+                                    <h3 class="row-centered">Trending Topics</h3>
+                                    <div class="tt">
+                                        <ul>
+                                            <li id="tt-newest">Paying Off Loans</li>
+                                            <li id="tt-2">Failed Out Of School</li>
+                                            <li id="tt-3">Can't Pay Child Loans</li>
+                                            <li id="tt-oldest">Loan Refund</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
                             </div>
+                            <!-- /.col-lg-6 -->
                             <!-- /.row -->
                         </div>
                     </div>
@@ -463,6 +478,65 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="../../../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            updateTrendingTopic();
+        });
+        function updateTrendingTopic() {
+            let index = 0;
+            let ttarr = ["Owner of Loan is Dead", "Loan Discounts for Government Workers", "GI Bill", "Updating Personal Assistant"]
+
+            setInterval(function () {
+                let secondOldestTT = document.querySelector('#tt-3').innerHTML;
+                let secondNewestTT = document.querySelector('#tt-2').innerHTML;
+                let newestTT = document.querySelector('#tt-newest').innerHTML;
+
+                $('#tt-oldest').addClass('animated fadeOutDown');
+                $('#tt-oldest').animateCssWithValue('fadeOutDown','#tt-oldest', secondOldestTT);
+                //document.querySelector('#tt-oldest').innerHTML = secondOldestTT;
+
+
+                document.querySelector('#tt-3').innerHTML = secondNewestTT;
+
+
+                document.querySelector('#tt-2').innerHTML = newestTT;
+
+                $('#tt-newest').addClass('animated fadeInDown');
+                $('#tt-newest').animateCssWithValue('fadeInDown', '#tt-newest', ttarr[index]);
+                document.querySelector('#tt-newest').innerHTML = ttarr[index];
+
+
+                if (index >= 3) {
+                    index = 0;
+                } else {
+                    index++;
+                }
+            }
+                , 4000);
+        }
+
+        $.fn.extend({
+            animateCss: function (animationName) {
+                var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+                this.addClass('animated ' + animationName).one(animationEnd, function () {
+                    $(this).removeClass('animated ' + animationName);
+                });
+                return this;
+            }
+        });
+
+        $.fn.extend({
+            animateCssWithValue: function (animationName,selector, value) {
+                var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+                this.addClass('animated ' + animationName).one(animationEnd, function () {
+                    $(this).removeClass('animated ' + animationName);
+                    document.querySelector(selector).innerHTML = value;
+                });
+                return this;
+            }
+        });
+    </script>
 
     <!-- Metis Menu Plugin JavaScript -->
     <script src="../../../vendor/metisMenu/metisMenu.min.js"></script>
