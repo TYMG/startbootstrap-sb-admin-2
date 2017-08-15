@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>MyServicer, YourServicer, ShoeServicer</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Animate CSS -->
+    <link href="../../../vendor/animate.css/animate.min.css" rel="stylesheet">
+
+
+    <!-- MetisMenu CSS -->
+    <link href="../../../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="../../../vendor/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper" class="container">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">MyServicer.gov</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li>
+                    <a href="../dashboard-mason.html">
+                        <i class="fa fa-tachometer fa-fw"></i>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-envelope fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>Servicer.gov</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>Your Loan Analysis is ready for review!!! To view, please click the link below, other...</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>Customer Service</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>Good Afternoon, In response to your question regarding the Pell Loan, you would be...</div>
+                            </a>
+                        </li>
+
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>Read All Messages</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-messages -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-tasks fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-tasks">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Loans Repaid</strong>
+                                        <span class="pull-right text-muted">80% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                                            style="width: 80%">
+                                            <span class="sr-only">80% Complete (danger)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>See More Details</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-tasks -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-comment fa-fw"></i> New Article Suggestion
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-trophy fa-fw"></i> New Milestone!!
+                                    <span class="pull-right text-muted small">2 hours ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-exclamation fa-fw"></i> Upcoming Payment
+                                    <span class="pull-right text-muted small">2 Days ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>See All Alerts</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-alerts -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="profile-settings.html"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-certificate fa-fw"></i> Badges</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+                        <li>
+                            <a href="tables.html"><i class="fa fa-list-alt fa-fw"></i> Loan Information</a>
+                        </li>
+                        <li>
+                            <a href="payment/make-payment.html"><i class="fa fa-money fa-fw"></i> Make A Payment<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#">Online Payment</a>
+                                </li>
+                                <li>
+                                    <a href="#">Set Up Auto Payment</a>
+                                </li>
+                                <li>
+                                    <a href="#">Other Forms of Payment <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">Bank Auto Pay</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Via Phone</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Via Mail</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Counseling<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="flot.html">Flot Charts</a>
+                                </li>
+                                <li>
+                                    <a href="morris.html">Morris.js Charts</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+
+                        <li>
+                            <a href="tables.html"><i class="fa fa-calculator fa-fw"></i> Repayment</a>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fa fa-university fa-fw"></i> Classroom<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="panels-wells.html">Videos</a>
+                                </li>
+                                <li>
+                                    <a href="buttons.html">Articles</a>
+                                </li>
+                                <li>
+                                    <a href="notifications.html">Forums</a>
+                                </li>
+                                <li>
+                                    <a href="typography.html">Calculators</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <div id="dashboard-page-wrapper">
+            <div id="loan-information__main" class="col-lg-12">
+                <div id="loan-information__header" class="col-lg-12">
+                    <h1 class="page-header dashboard-header">Loan Information</h1>
+                </div>
+                <div id="loan-information__aby" class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div>
+                                <h3 class="text-center">About Your Loans</h3>
+                            </div>
+                            <div class="panel panel-default">
+                                <!-- /.panel-heading -->
+                                <div class="panel-body">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs">
+                                        <li class="active"><a href="#home" data-toggle="tab">Text</a>
+                                        </li>
+                                        <li><a href="#profile" data-toggle="tab">Graphical Breakdown</a>
+                                        </li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade in active" id="home">
+                                            <h4>Loan Overview</h4>
+                                            <table class="table table-hover">
+                                                <tr>
+                                                    <th>Loan ID</th>
+                                                    <th>Servicer Name</th>
+                                                    <th>Date Recieved</th>
+                                                    <th>Total Amount</th>
+                                                    <th>% Interest</th>
+                                                    <th>Remaining Balance</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>1</th>
+                                                    <th>Navient</th>
+                                                    <th>7/12/2012</th>
+                                                    <th>$25,000</th>
+                                                    <th>4.5%</th>
+                                                    <th>13,389</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>2</th>
+                                                    <th>Mohela</th>
+                                                    <th>12/23/2015</th>
+                                                    <th>$45,000</th>
+                                                    <th>5%</th>
+                                                    <th>41,238</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Total</th>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th>$70,000</th>
+                                                    <th></th>
+                                                    <th>54,627</th>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="tab-pane fade" id="profile">
+                                            <h4>Remaining Breakdown</h4>
+                                            <!-- /.panel-heading -->
+                                            <div class="panel-body">
+                                                <div class="flot-chart">
+                                                    <div class="flot-chart-content" id="flot-pie-chart"></div>
+                                                </div>
+                                            </div>
+                                            <!-- /.panel-body -->
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- /.panel-body -->
+                            </div>
+                            <!-- /.panel -->
+                        </div>
+                    </div>
+                </div>
+                <div id="loan-information__rpa" class="col-lg-12">
+                    <div id="rpa__header">
+                    </div>
+                    <div id="rpa__about">
+                    </div>
+                    <div id="rpa__analyzer">
+                    </div>
+                    <div id="rpa__planner">
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+
+        <!-- jQuery -->
+        <script src="../../../vendor/jquery/jquery.min.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="../../../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+            });
+        </script>
+
+        <!-- Metis Menu Plugin JavaScript -->
+        <script src="../../../vendor/metisMenu/metisMenu.min.js"></script>
+
+        <!-- Morris Charts JavaScript -->
+        <script src="../../../vendor/raphael/raphael.min.js"></script>
+        <script src="../../../vendor/morrisjs/morris.min.js"></script>
+        <script src="../../../vendor/flot/excanvas.min.js"></script>
+        <script src="../../../vendor/flot/jquery.flot.js"></script>
+        <script src="../../../vendor/flot/jquery.flot.pie.js"></script>
+        <script src="../../../vendor/flot/jquery.flot.resize.js"></script>
+        <script src="../../../vendor/flot/jquery.flot.time.js"></script>
+        <script src="../../../vendor/flot-tooltip/jquery.flot.tooltip.min.js"></script>
+        <script src="../../../data/morris-data.js"></script>
+        <script src="../../../data/loan-info-data.js"></script>
+
+
+        <!-- Custom Theme JavaScript -->
+        <script src="../../../dist/js/sb-admin-2.js"></script>
+
+</body>
+
+</html>
