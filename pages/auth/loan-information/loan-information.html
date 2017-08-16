@@ -295,7 +295,7 @@
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2">
                             <div>
-                                <h3 class="text-center">About Your Loans</h3>
+                                <h2 class="text-center">About Your Loans</h2>
                             </div>
                             <div class="panel panel-default">
                                 <!-- /.panel-heading -->
@@ -368,10 +368,31 @@
                 </div>
                 <div id="loan-information__rpa" class="col-lg-12">
                     <div id="rpa__header">
+                        <h3 class="text-center">Repayment Performance Analyzer</h3>
                     </div>
                     <div id="rpa__about">
+                        <p>
+                            With student loan debt, it might seem like this feeling could last forever. But it doesn’t have to. But if you want them
+                            to go away faster, you’re going to have to upgrade your student loan repayment strategy. The
+                            Repayment Performance Analyzer is a built to aid users with updating their repayment strategy.
+                            In order observe the current status of yout payment strategy, the Repyament Performance Analysis,
+                            can perfom a health check of your current repayment strategy. After the Analysis is complete,
+                            users can use the Repayment Planner to plan a new repayment strategy. The goal of these tools
+                            is to work for just about anyone.
+                        </p>
                     </div>
                     <div id="rpa__analyzer">
+                        <h3 class="text-center">Repayment Performance Analysis</h3>
+                        <div id="rpa__analyzer-main">
+                            <p>
+                                In order to serve you, the Repayment Performance Analysis uses Servicing and Collection data points in addtion to 300+ predicitve
+                                areas of interest to develop a 360 degree view of your payment strategy. When the process
+                                completes, the Analysis will provide you a score that represents probablity risk of default.
+                                Note a number of factors will affect this score including the loans themselves, when and
+                                how much is being paid to those loans, and if any loans are delinquent.
+                            </p>
+                            <button type="button" class="btn btn-green btn-lg" data-toggle="modal" data-target="#li__rpa__analyzer-modal">Perform Repayment Analysis</button>
+                        </div>
                     </div>
                     <div id="rpa__planner">
                     </div>
@@ -380,6 +401,62 @@
             <!-- /.row -->
         </div>
 
+        <!-- Modal -->
+        <div class="modal fade" id="li__rpa__analyzer-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Repayment Performance Analysis</h4>
+                    </div>
+                    <div id="rpa-modal__body" class="modal-body">
+                        <div id="rpa-modal__1" class="rpa-modal__row  row">
+                            <div class="col-lg-4"><label> Reviewing Loan Information</label></div>
+                            <div class="rpa-modal__pb col-lg-8 ">
+                                <div class="progress">
+                                    <div id="rpa-modal__1-pb" class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0"
+                                        aria-valuemax="100" style="width: 0%">
+                                        <span class="sr-only">45% Complete</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="rpa-modal__2" class="rpa-modal__row  row">
+                            <div class="col-lg-4"> <label> Reviewing Payment History </label></div>
+                            <div class="col-lg-8 progress">
+                                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"
+                                    style="width: 65%">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="rpa-modal__3" class="rpa-modal__row  row">
+                            <div class="col-lg-4"><label>Analyzing Risks</label></div>
+                            <div class="col-lg-8 progress">
+                                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"
+                                    style="width: 75%">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="rpa-modal__4" class="rpa-modal__row  row">
+                            <div class="col-lg-4"><label> Calculating Score</label></div>
+                            <div class="col-lg-8 progress">
+                                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"
+                                    style="width: 95%">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="rpa-modal__5" class="row">
+                            <div id="rpa-modal__score" class="col-lg-9 col-lg-offset-1">
+                                <h2>Your Repayment Score: <span class="fa-green">Good</span></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- jQuery -->
         <script src="../../../vendor/jquery/jquery.min.js"></script>
 
@@ -387,8 +464,60 @@
         <script src="../../../vendor/bootstrap/js/bootstrap.min.js"></script>
 
         <script type="text/javascript">
-            $(document).ready(function () {
+            $('#li__rpa__analyzer-modal').on('show.bs.modal', function () {
+                setTimeout(function () {
+                    $("#rpa-modal__1").removeClass('hidden');
+                    $("#rpa-modal__1").addClass('animated fadeIn');
+                    updateProgressBar("#rpa-modal__1-pb");
+                }
+                    , 3000);
+                setTimeout(function () {
+                    $("#rpa-modal__2").removeClass('hidden');
+                    $("#rpa-modal__2").addClass('animated fadeIn');
+
+                }
+                    , 6000)
+                setTimeout(function () {
+                    $("#rpa-modal__3").removeClass('hidden');
+                    $("#rpa-modal__3").addClass('animated fadeIn');
+
+                }
+                    , 9000)
+                setTimeout(function () {
+                    $("#rpa-modal__4").removeClass('hidden');
+                    $("#rpa-modal__4").addClass('animated fadeIn');
+
+                }
+                    , 12000)
+                setTimeout(function () {
+                    $("#rpa-modal__5").removeClass('hidden');
+                    $("#rpa-modal__5").addClass('animated fadeIn');
+
+                }
+                    , 15000)
             });
+
+            $('#li__rpa__analyzer-modal').on('hidden.bs.modal', function () {
+                $("#rpa-modal__1").addClass('hidden');
+                $("#rpa-modal__2").addClass('hidden');
+                $("#rpa-modal__3").addClass('hidden');
+                $("#rpa-modal__4").addClass('hidden');
+                $("#rpa-modal__5").addClass('hidden');
+            })
+
+            function updateProgressBar(progressBarId) {
+                progress = 0;
+                console.log(progressBarId)
+                intervalFunct = setInterval(function () {
+                    console.log(progress)
+                    progress += 10;
+                    $(progressBarId).css('width', progress + '%');
+                    if (progress > 100) {
+                        clearInterval(intervalFunct);
+                    }
+                }, 1000)
+
+            }
         </script>
 
         <!-- Metis Menu Plugin JavaScript -->
