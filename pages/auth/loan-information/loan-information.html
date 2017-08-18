@@ -371,15 +371,18 @@
                         <h3 class="text-center">Repayment Performance Analyzer</h3>
                     </div>
                     <div id="rpa__about">
-                        <p>
-                            With student loan debt, it might seem like this feeling could last forever. But it doesn’t have to. But if you want them
-                            to go away faster, you’re going to have to upgrade your student loan repayment strategy. The
-                            Repayment Performance Analyzer is a built to aid users with updating their repayment strategy.
-                            In order observe the current status of yout payment strategy, the Repyament Performance Analysis,
-                            can perfom a health check of your current repayment strategy. After the Analysis is complete,
-                            users can use the Repayment Planner to plan a new repayment strategy. The goal of these tools
-                            is to work for just about anyone.
-                        </p>
+                        <button data-toggle="collapse" data-target="#rpa__about-text" class="rpa__about-toggle col-lg-12">Collapsible</button>
+                        <div id="rpa__about-text" class="collapse">
+                            <p>
+                                With student loan debt, it might seem like this feeling could last forever. But it doesn’t have to. But if you want them
+                                to go away faster, you’re going to have to upgrade your student loan repayment strategy.
+                                The Repayment Performance Analyzer is a built to aid users with updating their repayment
+                                strategy. In order observe the current status of yout payment strategy, the Repyament Performance
+                                Analysis, can perfom a health check of your current repayment strategy. After the Analysis
+                                is complete, users can use the Repayment Planner to plan a new repayment strategy. The goal
+                                of these tools is to work for just about anyone.
+                            </p>
+                        </div>
                     </div>
                     <div id="rpa__analyzer">
                         <h3 class="text-center">Repayment Performance Analysis</h3>
@@ -391,7 +394,9 @@
                                 Note a number of factors will affect this score including the loans themselves, when and
                                 how much is being paid to those loans, and if any loans are delinquent.
                             </p>
-                            <button type="button" class="btn btn-green btn-lg" data-toggle="modal" data-target="#li__rpa__analyzer-modal">Perform Repayment Analysis</button>
+                            <div class="col-lg-4 col-lg-offset-4">
+                                <button type="button" class="btn btn-green btn-lg" data-toggle="modal" data-target="#li__rpa__analyzer-modal">Perform Repayment Analysis</button>
+                            </div>
                         </div>
                     </div>
                     <div id="rpa__planner">
