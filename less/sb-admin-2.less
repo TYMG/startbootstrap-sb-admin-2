@@ -28,6 +28,7 @@ body {
     height: 100%;
 }
 
+
 /********
 
 GENERIC STYLEs
@@ -45,6 +46,9 @@ GENERIC STYLEs
     margin-right:-4px;
 }
 
+.margin-v-1 {
+    margin: 1% 0;
+}
 
 /*************************
 
@@ -82,8 +86,29 @@ COLORS
     color: white;
 }
 
+.btn-blue {
+    background-color:@basic-blue;
+    color:white;
+}
+
+.font-blue {
+    color: @basic-blue;
+}
+
+
 .background-blue {
     background-color: @background-blue;
+}
+
+
+/****************************
+
+Shapes
+
+****************************/
+
+.circle{
+    border-radius: 50%;
 }
 
 // Wrappers
@@ -1195,7 +1220,7 @@ LOAN INFORMATION
 
 *************************************/
 
-#loan-information__main {
+#loan-information__main, #loan-information__rpc{
     height:100%;
 }
 
@@ -1209,7 +1234,7 @@ LOAN INFORMATION
 }
 
 #loan-information__rpa {
-    height:65%;
+    height:25%;
    // background-color:skyblue;
 }
 #rpa__header > h3{
@@ -1252,6 +1277,66 @@ LOAN INFORMATION
 #rpa__planner {
     height:50%;
     //background-color:lawngreen;
+}
+
+#rpc__rpe {
+height:50%;
+}
+
+.rpe-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.rpe-switch input {display:none;}
+
+.rpe-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.rpe-slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .rpe-slider {
+  background-color: #2196F3;
+}
+
+input:focus + .rpe-slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .rpe-slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.rpe-slider.round {
+  border-radius: 34px;
+}
+
+.rpe-slider.round:before {
+  border-radius: 50%;
 }
 /************************************
 
