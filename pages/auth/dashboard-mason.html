@@ -210,7 +210,7 @@
                             <!-- /input-group -->
                         </li>
                         <li>
-                            <a href="tables.html"><i class="fa fa-list-alt fa-fw"></i> Loan Information</a>
+                            <a href="./loan-information/loan-information.html"><i class="fa fa-list-alt fa-fw"></i> Loan Information</a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-money fa-fw"></i> Make A Payment<span class="fa arrow"></span></a>
@@ -320,7 +320,7 @@
                         <div class="panel-heading">
                             <div class="row">
                                 <div class="col-xs-3">
-                                    <i class="fa fa-bomb fa-5x"></i>
+                                    <i class="fa fa-exclamation-triangle fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     <div class="huge">75</div>
@@ -773,21 +773,23 @@
         <!-- /.row -->
         <!-- Modal -->
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
+            <div id="jatg" class="modal-dialog " role="document">
+                <div id="jatg-content" class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Your Journey Since You've Been Gone</h4>
+                        <h4 class="modal-title modal-header-font" id="myModalLabel">Journey At A Glance...</h4>
                     </div>
-                    <div class="modal-body">
+                    <div style="height:60%" class="modal-body modal-font">
                         <div class="">
-                            <Label>Number of Payments: </Label><p>3</p>
+                            <Label>Number of Payments:</Label>&nbsp;<span class="animated tada">0</span>
                         </div>
                         <div class="">
-                            <Label>5 New Article Suggestions! </Label>
+                            <Label>Would you like information regarding federal repayment programs?</Label>
+                            <a class="col-lg-3" href="#">Yes</a>&nbsp;<a class="col-lg-3" href="#">No</a>
                         </div>
-                         <div class="animated tada">
-                            <Label>Congratulations You Paid of 50% of Your Loans </Label>
+                        <div class="">
+                            <Label>Making thinking about consolidating your loans?</Label>
+                            <a class="col-lg-3" href="#">Yes</a>&nbsp;<a class="col-lg-3" href="#">No</a>
                         </div>
                     </div>
                     <div class="modal-footer">
