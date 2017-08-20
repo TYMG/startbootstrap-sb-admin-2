@@ -415,7 +415,7 @@
                         <h4 class="modal-title" id="myModalLabel">Repayment Performance Analysis</h4>
                     </div>
                     <div id="rpa-modal__body" class="modal-body">
-                        <div id="rpa-modal__1" class="rpa-modal__row  row">
+                        <div id="rpa-modal__1" class="rpa-modal__row  row hidden">
                             <div class="col-lg-4"><label> Reviewing Loan Information</label></div>
                             <div class="rpa-modal__pb col-lg-8 ">
                                 <div class="progress">
@@ -426,31 +426,37 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="rpa-modal__2" class="rpa-modal__row  row">
+                        <div id="rpa-modal__2" class="rpa-modal__row  row hidden">
                             <div class="col-lg-4"> <label> Reviewing Payment History </label></div>
-                            <div class="col-lg-8 progress">
-                                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"
-                                    style="width: 65%">
+                            <div class="col-lg-8">
+                                <div class="progress">
+                                    <div id="rpa-modal__2-pb" class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0"
+                                        aria-valuemax="100" style="width: 0%">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div id="rpa-modal__3" class="rpa-modal__row  row">
+                        <div id="rpa-modal__3" class="rpa-modal__row  row hidden">
                             <div class="col-lg-4"><label>Analyzing Risks</label></div>
-                            <div class="col-lg-8 progress">
-                                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"
-                                    style="width: 75%">
+                            <div class="col-lg-8">
+                                <div class="progress">
+                                    <div id="rpa-modal__3-pb" class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0"
+                                        aria-valuemax="100" style="width: 0%">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div id="rpa-modal__4" class="rpa-modal__row  row">
+                        <div id="rpa-modal__4" class="rpa-modal__row  row hidden">
                             <div class="col-lg-4"><label> Calculating Score</label></div>
-                            <div class="col-lg-8 progress">
-                                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"
-                                    style="width: 95%">
+                            <div class="col-lg-8">
+                                <div class="progress">
+                                    <div id="rpa-modal__4-pb" class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0"
+                                        aria-valuemax="100" style="width: 0%">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div id="rpa-modal__5" class="row">
+                        <div id="rpa-modal__5" class="row hidden">
                             <div id="rpa-modal__score" class="col-lg-9 col-lg-offset-1">
                                 <h2>Your Repayment Score: <span class="fa-green">Good</span></h2>
                             </div>
@@ -479,27 +485,30 @@
                 setTimeout(function () {
                     $("#rpa-modal__2").removeClass('hidden');
                     $("#rpa-modal__2").addClass('animated fadeIn');
+                    updateProgressBar("#rpa-modal__2-pb");
+
+                }
+                    , 4500)
+                setTimeout(function () {
+                    $("#rpa-modal__3").removeClass('hidden');
+                    $("#rpa-modal__3").addClass('animated fadeIn');
+                    updateProgressBar("#rpa-modal__3-pb");
 
                 }
                     , 6000)
                 setTimeout(function () {
-                    $("#rpa-modal__3").removeClass('hidden');
-                    $("#rpa-modal__3").addClass('animated fadeIn');
-
-                }
-                    , 9000)
-                setTimeout(function () {
                     $("#rpa-modal__4").removeClass('hidden');
                     $("#rpa-modal__4").addClass('animated fadeIn');
+                    updateProgressBar("#rpa-modal__4-pb");
 
                 }
-                    , 12000)
+                    , 7500)
                 setTimeout(function () {
                     $("#rpa-modal__5").removeClass('hidden');
                     $("#rpa-modal__5").addClass('animated fadeIn');
 
                 }
-                    , 15000)
+                    , 13000)
             });
 
             $('#li__rpa__analyzer-modal').on('hidden.bs.modal', function () {
@@ -511,17 +520,16 @@
             })
 
             function updateProgressBar(progressBarId) {
-                progress = 0;
+                var progress = 0;
                 console.log(progressBarId)
-                intervalFunct = setInterval(function () {
+                var intervalFunct = setInterval(function () {
                     console.log(progress)
                     progress += 10;
                     $(progressBarId).css('width', progress + '%');
                     if (progress > 100) {
                         clearInterval(intervalFunct);
                     }
-                }, 1000)
-
+                }, 250)
             }
         </script>
 
