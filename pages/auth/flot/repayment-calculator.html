@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>MyServicer, YourServicer, ShoeServicer</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Animate CSS -->
+    <link href="../../../vendor/animate.css/animate.min.css" rel="stylesheet">
+
+
+    <!-- MetisMenu CSS -->
+    <link href="../../../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="../../../vendor/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper" class="container">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">MyServicer.gov</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li>
+                    <a href="../dashboard-mason.html">
+                        <i class="fa fa-tachometer fa-fw"></i>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-envelope fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>Servicer.gov</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>Your Loan Analysis is ready for review!!! To view, please click the link below, other...</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>Customer Service</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>Good Afternoon, In response to your question regarding the Pell Loan, you would be...</div>
+                            </a>
+                        </li>
+
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>Read All Messages</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-messages -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-tasks fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-tasks">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Loans Repaid</strong>
+                                        <span class="pull-right text-muted">80% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                                            style="width: 80%">
+                                            <span class="sr-only">80% Complete (danger)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>See More Details</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-tasks -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-comment fa-fw"></i> New Article Suggestion
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-trophy fa-fw"></i> New Milestone!!
+                                    <span class="pull-right text-muted small">2 hours ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-exclamation fa-fw"></i> Upcoming Payment
+                                    <span class="pull-right text-muted small">2 Days ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>See All Alerts</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-alerts -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="profile-settings.html"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-certificate fa-fw"></i> Badges</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+                        <li>
+                            <a href="tables.html"><i class="fa fa-list-alt fa-fw"></i> Loan Information</a>
+                        </li>
+                        <li>
+                            <a href="payment/make-payment.html"><i class="fa fa-money fa-fw"></i> Make A Payment<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#">Online Payment</a>
+                                </li>
+                                <li>
+                                    <a href="#">Set Up Auto Payment</a>
+                                </li>
+                                <li>
+                                    <a href="#">Other Forms of Payment <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">Bank Auto Pay</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Via Phone</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Via Mail</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Counseling<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="flot.html">Flot Charts</a>
+                                </li>
+                                <li>
+                                    <a href="morris.html">Morris.js Charts</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+
+                        <li>
+                            <a href="tables.html"><i class="fa fa-calculator fa-fw"></i> Repayment</a>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fa fa-university fa-fw"></i> Classroom<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="panels-wells.html">Videos</a>
+                                </li>
+                                <li>
+                                    <a href="buttons.html">Articles</a>
+                                </li>
+                                <li>
+                                    <a href="notifications.html">Forums</a>
+                                </li>
+                                <li>
+                                    <a href="typography.html">Calculators</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <div id="dashboard-page-wrapper">
+            <div id="rc">
+                <div class="col-lg-12">
+                    <h1 class="page-header dashboard-header">Repayment Calculator</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+                <!-- /.row -->
+                <div id="rc__main" class="col-lg-12">
+                    
+                    <div id="content">
+
+		<div id="rc__main__flot-container">
+			<div id="placeholder" class="flot-placeholder" style="padding: 0px; position: relative;"><canvas class="flot-base" width="818" height="413" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 818px; height: 413px;"></canvas><div class="flot-text" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; font-size: smaller; color: rgb(84, 84, 84);"><div class="flot-x-axis flot-x1-axis xAxis x1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 81px; top: 395px; left: 14px; text-align: center;">1999</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 81px; top: 395px; left: 100px; text-align: center;">2000</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 81px; top: 395px; left: 187px; text-align: center;">2001</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 81px; top: 395px; left: 273px; text-align: center;">2002</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 81px; top: 395px; left: 360px; text-align: center;">2003</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 81px; top: 395px; left: 446px; text-align: center;">2004</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 81px; top: 395px; left: 533px; text-align: center;">2005</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 81px; top: 395px; left: 619px; text-align: center;">2006</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 81px; top: 395px; left: 706px; text-align: center;">2007</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 81px; top: 395px; left: 792px; text-align: center;">2008</div></div><div class="flot-y-axis flot-y1-axis yAxis y1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"><div class="flot-tick-label tickLabel" style="position: absolute; top: 382px; left: 2px; text-align: right;">-1.0</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 318px; left: 6px; text-align: right;">0.0</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 255px; left: 6px; text-align: right;">1.0</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 191px; left: 6px; text-align: right;">2.0</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 127px; left: 6px; text-align: right;">3.0</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 64px; left: 6px; text-align: right;">4.0</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 0px; left: 6px; text-align: right;">5.0</div></div></div><canvas class="flot-overlay" width="818" height="413" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 818px; height: 413px;"></canvas><div class="legend"><div style="position: absolute; width: 111px; height: 89px; top: 13px; right: 18px; background-color: rgb(255, 255, 255); opacity: 0.85;"> </div><table style="position:absolute;top:13px;right:18px;;font-size:smaller;color:#545454"><tbody><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(237,194,64);overflow:hidden"></div></div></td><td class="legendLabel">Europe (EU27)</td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(175,216,248);overflow:hidden"></div></div></td><td class="legendLabel">Europe (EU27)</td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(203,75,75);overflow:hidden"></div></div></td><td class="legendLabel">Japan</td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(77,167,77);overflow:hidden"></div></div></td><td class="legendLabel">USA</td></tr></tbody></table></div></div>
+		</div>
+		<p>
+			<button class="dataUpdate">Poll for data</button>
+		</p>
+
+	</div>
+                </div>
+            </div>
+            <!-- /.panel .chat-panel -->
+            <!-- /.col-lg-4 -->
+        </div>
+    </div>
+    <!-- /.row -->
+    </div>
+    <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="../../../vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+     $(function() {
+        var payment = [[1999, 3.0], [2000, 3.9], [2001, 2.0], [2002, 1.2], [2003, 1.3], [2004, 2.5], [2005, 2.0], [2006, 3.1], [2007, 2.9], [2008, 0.9]];
+		var options = {
+			lines: {
+				show: true
+			},
+			points: {
+				show: true
+			},
+			xaxis: {
+				tickDecimals: 0,
+				tickSize: 1
+			}
+		};
+
+		var data = [];
+
+		$.plot("#placeholder", data, options);
+
+		// Fetch one series, adding to what we already have
+
+		var alreadyFetched = {};
+
+		// Initiate a recurring data update
+
+		$("button.dataUpdate").click(function () {
+
+			data = [];
+			alreadyFetched = {};
+
+			$.plot("#placeholder", data, options);
+
+			var iteration = 0;
+
+			function fetchData() {
+
+				++iteration;
+
+				function onDataReceived(series) {
+
+					// Load all the data in one pass; if we only got partial
+					// data we could merge it with what we already have.
+
+					data = [ series ];
+					$.plot("#placeholder", data, options);
+				}
+
+				// Normally we call the same URL - a script connected to a
+				// database - but in this case we only have static example
+                // files, so we need to modify the URL.
+                onDataReceived(payment.slice(0,iteration))
+                
+				if (iteration < 5) {
+					setTimeout(fetchData, 1000);
+				} else {
+					data = [];
+					alreadyFetched = {};
+				}
+			}
+
+			setTimeout(fetchData, 1000);
+		});
+
+		// Load the first series by default, so we don't have an empty plot
+
+		$("button.fetchSeries:first").click();
+
+		// Add the Flot version string to the footer
+
+	});
+
+    </script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../../../vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="../../../vendor/raphael/raphael.min.js"></script>
+    <script src="../../../vendor/morrisjs/morris.min.js"></script>
+    <script src="../../../data/morris-data.js"></script>
+
+     <!-- Flot Charts JavaScript -->
+    <script src="../../../vendor/flot/excanvas.min.js"></script>
+    <script src="../../../vendor/flot/jquery.flot.js"></script>
+    <script src="../../../vendor/flot/jquery.flot.pie.js"></script>
+    <script src="../../../vendor/flot/jquery.flot.resize.js"></script>
+    <script src="../../../vendor/flot/jquery.flot.time.js"></script>
+    <script src="../../../vendor/flot-tooltip/jquery.flot.tooltip.min.js"></script>
+    <script src="../../../data/flot-data.js"></script>
+
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../../../dist/js/sb-admin-2.js"></script>
+
+</body>
+
+</html>
