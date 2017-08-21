@@ -394,187 +394,184 @@
 
                 </div>
                 <div id="loan-information__rpc" class="col-lg-12">
-                    <div class="row">
+                    <div class="row v-h-100">
                         <div class="col-lg-12 margin-v-1">
                             <h2 class="text-left fa-green">Repayment Calculator</h3>
                         </div>
                         <hr>
                         <div id="rpc__main" class="col-lg-12">
-                            <div class="row">
-                                <div id="rpc__loan-info" class="col-lg-6">
-                                    <h4>Your Loan Information</h4>
+                            <div class="row v-h-100">
+                                <div id="rpc__li-ti" class="col-lg-12 v-h-100">
                                     <div class="row">
-                                        <div class="radio col-lg-12">
-                                            <label><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Use Yours Loans</label>
-                                        </div>
-                                        <div class="radio col-lg-12">
-                                            <label><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Use Average Loan Balances</label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-lg-8">
-                                            Your Loan Balance
-                                        </div>
-                                        <div class="col-lg-4">
-                                            $30,000
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-lg-8">
-                                            <b>Interest Rate</b>
-                                        </div>
-                                        <div class="col-lg-4">
-                                            4%
-                                        </div>
-                                    </div>
-                                    <div class="row ">
-                                        <button type="button" class="btn btn-blue btn-lg text-uppercase col-lg-8 col-lg-offset-2">View Or Add Your Loans</button>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <a href="#">More Information</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="rpc__tax" class="col-lg-6">
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <h4>Your Tax Filing Status</h4>
-                                        </div>
-                                        <div class="col-lg-9">
-                                            <label>Select your tax filing status:</label>
-                                            <select class="form-control">
-                                                <option>Single</option>
-                                                <option>Married Filing Jointly</option>
-                                                <option>Married Filing Seperately</option>
-                                                <option>Head of Household</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="rpc__fam" class="col-lg-12">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <h5>Your Family Size</h5>
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                The following questions will be used to calculate your <a href="#">family size</a>.
-                                                Do not Include yourself or your spouse (if applicable) in your responses
-                                                to these questions. You and your spouse, as appropriate, are automatically
-                                                included in your family size.
-                                            </div>
-                                        </div>
-                                        <h6>Your Family Size</h6>
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                How many
-                                                <u>children</u>, including unborn children, are in your family and receive more
-                                                than half of their support from you?
-                                            </div>
-                                            <div class="col-lg-12">
-                                                <div class="row">
-                                                    <div class="col-lg-4">
-                                                        <select class="form-control">
-                                                        <option>0</option>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                    </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                How many people,
-                                                <u>excluding your spouse and children</u>, live with you, and receive more than
-                                                half of their support from you?
-                                            </div>
-                                            <div class="col-lg-12">
-                                                <div class="row">
-                                                    <div class="col-lg-4">
-                                                        <select class="form-control">
-                                                        <option>0</option>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                    </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-12">
+                                        <div id="rpc__loan-info" class="col-lg-6">
+                                            <div id="loan-info__main" class="row">
+                                                <div style="margin-left:3%;">
+                                                    <h4>Your Loan Information</h4>
 
-                                                <div class="row">
+                                                    <div class="radio">
+                                                        <label><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"  checked>Use Yours Loans</label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Use Average Loan Balances</label>
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        Your Loan Balance
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        $30,000
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <b>Interest Rate</b>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        4%
+                                                    </div>
+                                                    <button type="button" class="btn btn-blue btn-lg text-uppercase col-lg-8 col-lg-offset-2">View Or Add Your Loans</button>
                                                     <div class="col-lg-12">
-                                                        <h5>What is your marital status?</h5>
-                                                    </div>
-                                                    <div class="radio col-lg-12">
-                                                        <label><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Married</label>
-                                                    </div>
-                                                    <div class="radio col-lg-12">
-                                                        <label><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Single</label>
+                                                        <a href="#">More Information</a>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                Based on your responses to these questions, your family size has been calculated as 1. Your family size will be used to calculate
-                                                repayment estimates in the table below.
+                                        <div id="rpc__tax" class="col-lg-6">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <h4>Your Tax Filing Status</h4>
+                                                </div>
+                                                <div class="col-lg-9">
+                                                    <label>Select your tax filing status:</label>
+                                                    <select class="form-control">
+                                                        <option>Single</option>
+                                                        <option>Married Filing Jointly</option>
+                                                        <option>Married Filing Seperately</option>
+                                                        <option>Head of Household</option>
+                                                    </select>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div id="rpc__rpe" class="col-lg-12">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="row">
-                                            <div class="col-lg-4">
-                                                <div class="row">
-                                                    <div class="col-lg-6">
-                                                        <h5>Repayment Estimator</h5>
+                                <div id="rpc__fam" class="col-lg-12">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <h3>Your Family Size</h3>
+                                                    The following questions will be used to calculate your <a href="#">family size</a>.
+                                                    Do not Include yourself or your spouse (if applicable) in your responses
+                                                    to these questions. You and your spouse, as appropriate, are automatically
+                                                    included in your family size.
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <h4 class="text-left">Dependent Children</h4>
+                                                    <span>
+                                                    How many
+                                                    <u>children</u>, including unborn children, are in your family and receive
+                                                    more than half of their support from you?</span>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="row">
+                                                        <div class="col-lg-4">
+                                                            <select class="form-control">
+                                                        <option>0</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                    </select>
+                                                        </div>
                                                     </div>
-                                                    <div class="col-lg-6">
-                                                        <h5>
-                                                            <a href="#">More Information</a>
-                                                        </h5>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <h4 class="text-left">Other Dependents</h4>
+                                                    <span>
+                                                    How many people,
+                                                    <u>excluding your spouse and children</u>, live with you, and receive more
+                                                    than half of their support from you?</span>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="row">
+                                                        <div class="col-lg-4">
+                                                            <select class="form-control">
+                                                        <option>0</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                    </select>
+                                                        </div>
                                                     </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <h4 class="text-left">What is your marital status?</h4>
+                                                        </div>
+                                                        <div class="radio col-lg-12">
+                                                            <label><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Married</label>
+                                                        </div>
+                                                        <div class="radio col-lg-12">
+                                                            <label><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Single</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    Based on your responses to these questions, your family size has been calculated as 1. Your family size will be used to calculate
+                                                    repayment estimates in the table below.
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div id="rpe__user-info" class="col-lg-12">
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <div class="row">
-                                                    <div class="col-lg-6">
-                                                        <h5>Current Loan Balance</h5>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <h5>
-                                                            $30,000
-                                                        </h5>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-lg-6">
-                                                        <h5 class="blue">Adjusted Gross Income</h5>
-                                                        <h5 class="blue">(AGI)</h5>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <input type="text" class="form-control" id="rpe__agi" placeholder="70,000">
+                                </div>
+                                <div id="rpc__rpe" class="col-lg-12">
+                                    <div class="row padding-a-5">
+                                        <div class="col-lg-12 padding-v-1">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="row">
+                                                        <div class="col-lg-6">
+                                                            <div class="row">
+                                                                <h4 class="text-left col-lg-12">Repayment Estimator</h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <h4 class="text-left">
+                                                                <a href="#">More Information</a>
+                                                            </h4>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-6">
-                                                <div class="row">
-                                                    <div class="col-lg-3">
-                                                        <h5>State of Residence</h5>
+                                        </div>
+                                        <div id="rpe__user-info" class="col-lg-12">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="row">
+                                                        <div class="col-lg-6">
+                                                            Current Loan Balance
+                                                        </div>
+                                                        <div class="col-lg-6">
+
+                                                            $30,000
+                                                        </div>
                                                     </div>
-                                                    <div class="col-lg-6">
-                                                        <select>
+                                                    <div class="row">
+                                                        <div class="col-lg-6">
+                                                            <span class="blue">Adjusted Gross Income</span>
+                                                            <span class="blue">(AGI)</span>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <input type="text" class="form-control" id="rpe__agi" placeholder="70,000">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="row">
+                                                        <div class="col-lg-6">
+                                                            <span>State of Residence</span>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <select>
                                                             <option value="AL">Alabama</option>
                                                             <option value="AK">Alaska</option>
                                                             <option value="AZ">Arizona</option>
@@ -627,219 +624,220 @@
                                                             <option value="WI">Wisconsin</option>
                                                             <option value="WY">Wyoming</option>
                                                         </select>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                <span> Show payment estimated under <a href="#">Public Service Loan Forgiveness (PSLF)</a></span>
-                                                <label class="rpe-switch">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <span> Show payment estimated under <a href="#">Public Service Loan Forgiveness (PSLF)</a></span>
+                                                    <label class="rpe-switch">
                                                     <input type="checkbox" checked>
                                                     <span class="rpe-slider round"></span>
                                                     </label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <p>
+                                                        <button type="button" class="btn btn-green btn-lg">Calculate My Repayment</button>
+                                                    </p>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                <p>
-                                                    <button type="button" class="btn btn-green btn-lg">Calculate My Repayment</button>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="rpe__repay-types" class="col-lg-12">
-                                        <div class="row">
-                                            <div id="stdrd" class="col-lg-12">
-                                                <div class="row">
-                                                    <div class="repay-type col-lg-12">
-                                                        <div class="row">
-                                                            <div class="col-lg-8">
-                                                                Standard
-                                                            </div>
-                                                            <div class="col-lg-4">
-                                                                $304-$304/month
-                                                            </div>
+                                        <div id="rpe__repay-types" class="col-lg-12">
+                                            <div id="stdrd" class="row repay_type">
+                                                <div  class="col-lg-12">
+                                                    <div class="row">
+                                                        <div class="col-lg-8">
+                                                            Standard
                                                         </div>
-                                                        <div class="row">
-                                                            <div class="col-lg-10">
-                                                                <span>You will pay a total of <b>$34,448</b> over <b>120 month</b></span>
-                                                            </div>
-                                                            <div class="col-lg-2">
-                                                                <button type="button" data-toggle="collapse" data-target="#stdrd-details" class="btn btn-blue btn-xs circle"><i class="fa fa-plus" aria-hidden="true"></i></button>
-                                                            </div>
-                                                            <div id="stdrd-details" class="collapse col-lg-12">
-                                                                Lorem ipsum dolor text....
-                                                            </div>
+                                                        <div class="col-lg-4">
+                                                            $304-$304/month
                                                         </div>
                                                     </div>
-                                                    <div class="repay-type-info col-lg-12">
+                                                    <div class="row">
+                                                        <div class="col-lg-10">
+                                                            <span>You will pay a total of <b>$34,448</b> over <b>120 month</b></span>
+                                                        </div>
+                                                        <div class="col-lg-2">
+                                                            <button type="button" data-toggle="collapse" data-target="#stdrd-details" class="btn btn-blue btn-xs circle"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                                                        </div>
+                                                        <div id="stdrd-details" class="collapse col-lg-12 repay_type-detail">
+                                                            Lorem ipsum dolor text....
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div id="grad"></div>
-                                                <div></div>
-                                                <div></div>
-                                                <div></div>
-                                                <div></div>
+                                                <div class="repay-type-info col-lg-12">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div id="rpe__comp-tool">
+                                            <div id="grad" class="row repay_type">
 
+                                            </div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
                                         </div>
                                     </div>
+
+                                </div>
+                                <div id="rpe__comp-tool">
 
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- /.row -->
                 </div>
+            </div>
+            <!-- /.row -->
+        </div>
 
-                <!-- Modal -->
-                <div class="modal fade" id="li__rpa__analyzer-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                <h4 class="modal-title" id="myModalLabel">Repayment Performance Analysis</h4>
-                            </div>
-                            <div id="rpa-modal__body" class="modal-body">
-                                <div id="rpa-modal__1" class="rpa-modal__row  row hidden">
-                                    <div class="col-lg-4"><label> Reviewing Loan Information</label></div>
-                                    <div class="rpa-modal__pb col-lg-8 ">
-                                        <div class="progress">
-                                            <div id="rpa-modal__1-pb" class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0"
-                                                aria-valuemax="100" style="width: 0%">
-                                                <span class="sr-only">45% Complete</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="rpa-modal__2" class="rpa-modal__row  row hidden">
-                                    <div class="col-lg-4"> <label> Reviewing Payment History </label></div>
-                                    <div class="col-lg-8">
-                                        <div class="progress">
-                                            <div id="rpa-modal__2-pb" class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0"
-                                                aria-valuemax="100" style="width: 0%">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="rpa-modal__3" class="rpa-modal__row  row hidden">
-                                    <div class="col-lg-4"><label>Analyzing Risks</label></div>
-                                    <div class="col-lg-8">
-                                        <div class="progress">
-                                            <div id="rpa-modal__3-pb" class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0"
-                                                aria-valuemax="100" style="width: 0%">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="rpa-modal__4" class="rpa-modal__row  row hidden">
-                                    <div class="col-lg-4"><label> Calculating Score</label></div>
-                                    <div class="col-lg-8">
-                                        <div class="progress">
-                                            <div id="rpa-modal__4-pb" class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0"
-                                                aria-valuemax="100" style="width: 0%">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="rpa-modal__5" class="row hidden">
-                                    <div id="rpa-modal__score" class="col-lg-9 col-lg-offset-1">
-                                        <h2>Your Repayment Score: <span class="fa-green">Good</span></h2>
+        <!-- Modal -->
+        <div class="modal fade" id="li__rpa__analyzer-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Repayment Performance Analysis</h4>
+                    </div>
+                    <div id="rpa-modal__body" class="modal-body">
+                        <div id="rpa-modal__1" class="rpa-modal__row  row hidden">
+                            <div class="col-lg-4"><label> Reviewing Loan Information</label></div>
+                            <div class="rpa-modal__pb col-lg-8 ">
+                                <div class="progress">
+                                    <div id="rpa-modal__1-pb" class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0"
+                                        aria-valuemax="100" style="width: 0%">
+                                        <span class="sr-only">45% Complete</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                        <div id="rpa-modal__2" class="rpa-modal__row  row hidden">
+                            <div class="col-lg-4"> <label> Reviewing Payment History </label></div>
+                            <div class="col-lg-8">
+                                <div class="progress">
+                                    <div id="rpa-modal__2-pb" class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0"
+                                        aria-valuemax="100" style="width: 0%">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="rpa-modal__3" class="rpa-modal__row  row hidden">
+                            <div class="col-lg-4"><label>Analyzing Risks</label></div>
+                            <div class="col-lg-8">
+                                <div class="progress">
+                                    <div id="rpa-modal__3-pb" class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0"
+                                        aria-valuemax="100" style="width: 0%">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="rpa-modal__4" class="rpa-modal__row  row hidden">
+                            <div class="col-lg-4"><label> Calculating Score</label></div>
+                            <div class="col-lg-8">
+                                <div class="progress">
+                                    <div id="rpa-modal__4-pb" class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0"
+                                        aria-valuemax="100" style="width: 0%">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="rpa-modal__5" class="row hidden">
+                            <div id="rpa-modal__score" class="col-lg-9 col-lg-offset-1">
+                                <h2>Your Repayment Score: <span class="fa-green">Good</span></h2>
                             </div>
                         </div>
                     </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
                 </div>
-                <!-- jQuery -->
-                <script src="../../../vendor/jquery/jquery.min.js"></script>
+            </div>
+        </div>
+        <!-- jQuery -->
+        <script src="../../../vendor/jquery/jquery.min.js"></script>
 
-                <!-- Bootstrap Core JavaScript -->
-                <script src="../../../vendor/bootstrap/js/bootstrap.min.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="../../../vendor/bootstrap/js/bootstrap.min.js"></script>
 
-                <script type="text/javascript">
-                    $('#li__rpa__analyzer-modal').on('show.bs.modal', function () {
-                        setTimeout(function () {
-                            $("#rpa-modal__1").removeClass('hidden');
-                            $("#rpa-modal__1").addClass('animated fadeIn');
-                            updateProgressBar("#rpa-modal__1-pb");
-                        }
-                            , 3000);
-                        setTimeout(function () {
-                            $("#rpa-modal__2").removeClass('hidden');
-                            $("#rpa-modal__2").addClass('animated fadeIn');
-                            updateProgressBar("#rpa-modal__2-pb");
+        <script type="text/javascript">
+            $('#li__rpa__analyzer-modal').on('show.bs.modal', function () {
+                setTimeout(function () {
+                    $("#rpa-modal__1").removeClass('hidden');
+                    $("#rpa-modal__1").addClass('animated fadeIn');
+                    updateProgressBar("#rpa-modal__1-pb");
+                }
+                    , 3000);
+                setTimeout(function () {
+                    $("#rpa-modal__2").removeClass('hidden');
+                    $("#rpa-modal__2").addClass('animated fadeIn');
+                    updateProgressBar("#rpa-modal__2-pb");
 
-                        }
-                            , 4500)
-                        setTimeout(function () {
-                            $("#rpa-modal__3").removeClass('hidden');
-                            $("#rpa-modal__3").addClass('animated fadeIn');
-                            updateProgressBar("#rpa-modal__3-pb");
+                }
+                    , 4500)
+                setTimeout(function () {
+                    $("#rpa-modal__3").removeClass('hidden');
+                    $("#rpa-modal__3").addClass('animated fadeIn');
+                    updateProgressBar("#rpa-modal__3-pb");
 
-                        }
-                            , 6000)
-                        setTimeout(function () {
-                            $("#rpa-modal__4").removeClass('hidden');
-                            $("#rpa-modal__4").addClass('animated fadeIn');
-                            updateProgressBar("#rpa-modal__4-pb");
+                }
+                    , 6000)
+                setTimeout(function () {
+                    $("#rpa-modal__4").removeClass('hidden');
+                    $("#rpa-modal__4").addClass('animated fadeIn');
+                    updateProgressBar("#rpa-modal__4-pb");
 
-                        }
-                            , 7500)
-                        setTimeout(function () {
-                            $("#rpa-modal__5").removeClass('hidden');
-                            $("#rpa-modal__5").addClass('animated fadeIn');
+                }
+                    , 7500)
+                setTimeout(function () {
+                    $("#rpa-modal__5").removeClass('hidden');
+                    $("#rpa-modal__5").addClass('animated fadeIn');
 
-                        }
-                            , 13000)
-                    });
+                }
+                    , 13000)
+            });
 
-                    $('#li__rpa__analyzer-modal').on('hidden.bs.modal', function () {
-                        $("#rpa-modal__1").addClass('hidden');
-                        $("#rpa-modal__2").addClass('hidden');
-                        $("#rpa-modal__3").addClass('hidden');
-                        $("#rpa-modal__4").addClass('hidden');
-                        $("#rpa-modal__5").addClass('hidden');
-                    })
+            $('#li__rpa__analyzer-modal').on('hidden.bs.modal', function () {
+                $("#rpa-modal__1").addClass('hidden');
+                $("#rpa-modal__2").addClass('hidden');
+                $("#rpa-modal__3").addClass('hidden');
+                $("#rpa-modal__4").addClass('hidden');
+                $("#rpa-modal__5").addClass('hidden');
+            })
 
-                    function updateProgressBar(progressBarId) {
-                        var progress = 0;
-                        console.log(progressBarId)
-                        var intervalFunct = setInterval(function () {
-                            console.log(progress)
-                            progress += 10;
-                            $(progressBarId).css('width', progress + '%');
-                            if (progress > 100) {
-                                clearInterval(intervalFunct);
-                            }
-                        }, 250)
+            function updateProgressBar(progressBarId) {
+                var progress = 0;
+                console.log(progressBarId)
+                var intervalFunct = setInterval(function () {
+                    console.log(progress)
+                    progress += 10;
+                    $(progressBarId).css('width', progress + '%');
+                    if (progress > 100) {
+                        clearInterval(intervalFunct);
                     }
-                </script>
+                }, 250)
+            }
+        </script>
 
-                <!-- Metis Menu Plugin JavaScript -->
-                <script src="../../../vendor/metisMenu/metisMenu.min.js"></script>
+        <!-- Metis Menu Plugin JavaScript -->
+        <script src="../../../vendor/metisMenu/metisMenu.min.js"></script>
 
-                <!-- Morris Charts JavaScript -->
-                <script src="../../../vendor/raphael/raphael.min.js"></script>
-                <script src="../../../vendor/morrisjs/morris.min.js"></script>
-                <script src="../../../vendor/flot/excanvas.min.js"></script>
-                <script src="../../../vendor/flot/jquery.flot.js"></script>
-                <script src="../../../vendor/flot/jquery.flot.pie.js"></script>
-                <script src="../../../vendor/flot/jquery.flot.resize.js"></script>
-                <script src="../../../vendor/flot/jquery.flot.time.js"></script>
-                <script src="../../../vendor/flot-tooltip/jquery.flot.tooltip.min.js"></script>
-                <script src="../../../data/morris-data.js"></script>
-                <script src="../../../data/loan-info-data.js"></script>
+        <!-- Morris Charts JavaScript -->
+        <script src="../../../vendor/raphael/raphael.min.js"></script>
+        <script src="../../../vendor/morrisjs/morris.min.js"></script>
+        <script src="../../../vendor/flot/excanvas.min.js"></script>
+        <script src="../../../vendor/flot/jquery.flot.js"></script>
+        <script src="../../../vendor/flot/jquery.flot.pie.js"></script>
+        <script src="../../../vendor/flot/jquery.flot.resize.js"></script>
+        <script src="../../../vendor/flot/jquery.flot.time.js"></script>
+        <script src="../../../vendor/flot-tooltip/jquery.flot.tooltip.min.js"></script>
+        <script src="../../../data/morris-data.js"></script>
+        <script src="../../../data/loan-info-data.js"></script>
 
 
-                <!-- Custom Theme JavaScript -->
-                <script src="../../../dist/js/sb-admin-2.js"></script>
+        <!-- Custom Theme JavaScript -->
+        <script src="../../../dist/js/sb-admin-2.js"></script>
 
 </body>
 

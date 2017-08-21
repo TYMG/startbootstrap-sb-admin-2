@@ -10,6 +10,7 @@ VARIABLES
 @puke-green:#8CE263;
 @background-blue:#C4E3FF;
 @basic-blue: cornflowerblue;
+
  
 /********************/
 @silver:#B2B1BC;
@@ -44,6 +45,17 @@ GENERIC STYLEs
     float:none;
     /* inline-block space fix */
     margin-right:-4px;
+}
+.padding-v-1{
+    padding:1%
+}
+
+.padding-v-5{
+    padding:5%
+}
+
+.padding-a-5 {
+    padding:5%;     
 }
 
 .margin-v-1 {
@@ -101,6 +113,25 @@ COLORS
 }
 
 
+/****************************
+
+Heights
+
+****************************/
+
+.v-h-100{
+    height:100%;
+}
+
+.v-h-75{
+    height:75%;
+}
+.v-h-50{
+    height:50%;
+}
+.v-h-25{
+    height:25%;
+}
 /****************************
 
 Shapes
@@ -1220,8 +1251,13 @@ LOAN INFORMATION
 
 *************************************/
 
+@loan-info__font:18px;
+
 #loan-information__main, #loan-information__rpc{
     height:100%;
+}
+#loan-information__main div{
+    font-size:@loan-info__font;
 }
 
 #loan-information__header {
@@ -1262,7 +1298,7 @@ LOAN INFORMATION
     height:30%;
     //background-color: whitesmoke;
     padding:1%;
-    font-size: 16px;
+    font-size: @loan-info__font;
 }
 
 #rpa__about-text{
@@ -1270,17 +1306,20 @@ LOAN INFORMATION
     padding:1%;
 }
 
-#rpa__analyzer {
-    //background-color: burlywood;
-}
-
 #rpa__planner {
     height:50%;
     //background-color:lawngreen;
 }
 
+#loan-info__main div{
+    padding:1% 0;
+}
+
 #rpc__rpe {
-height:50%;
+height:1500px;
+border: solid 1px black;
+border-radius: 5%;
+font-size:@loan-info__font;
 }
 
 .rpe-switch {
@@ -1337,6 +1376,20 @@ input:checked + .rpe-slider:before {
 
 .rpe-slider.round:before {
   border-radius: 50%;
+}
+
+
+#rpe__user-info{
+    font-size:@loan-info__font;
+    padding: 1% 0;
+}
+
+.repay_type {
+    background-color: lightgrey;
+}
+.repay_type-detail {
+    background-color: whitesmoke;
+    height:500px;
 }
 /************************************
 
