@@ -17,7 +17,7 @@ var banner = ['/*!\n',
 ].join('');
 
 // Compile LESS files from /less into /css
-gulp.task('less', function() {
+gulp.task('less', function () {
     return gulp.src('less/sb-admin-2.less')
         .pipe(less())
         .pipe(header(banner, { pkg: pkg }))
@@ -27,8 +27,18 @@ gulp.task('less', function() {
         }))
 });
 
+gulp.task('less', function () {
+    return gulp.src('less/d3.less')
+        .pipe(less())
+        .pipe(header(banner, { pkg: pkg }))
+        .pipe(gulp.dest('dist/css'))
+        .pipe(browserSync.reload({
+            stream: true
+        }))
+});
+
 // Minify compiled CSS
-gulp.task('minify-css', ['less'], function() {
+gulp.task('minify-css', ['less'], function () {
     return gulp.src('dist/css/sb-admin-2.css')
         .pipe(cleanCSS({ compatibility: 'ie8' }))
         .pipe(rename({ suffix: '.min' }))
@@ -38,8 +48,19 @@ gulp.task('minify-css', ['less'], function() {
         }))
 });
 
+// Minify compiled CSS
+gulp.task('minify-css', ['less'], function () {
+    return gulp.src('dist/css/d3.css')
+        .pipe(cleanCSS({ compatibility: 'ie8' }))
+        .pipe(rename({ suffix: '.min' }))
+        .pipe(gulp.dest('dist/css'))
+        .pipe(browserSync.reload({
+            stream: true
+        }))
+});
+
 // Copy JS to dist
-gulp.task('js', function() {
+gulp.task('js', function () {
     return gulp.src(['js/sb-admin-2.js'])
         .pipe(header(banner, { pkg: pkg }))
         .pipe(gulp.dest('dist/js'))
@@ -49,7 +70,7 @@ gulp.task('js', function() {
 })
 
 // Minify JS
-gulp.task('minify-js', ['js'], function() {
+gulp.task('minify-js', ['js'], function () {
     return gulp.src('js/sb-admin-2.js')
         .pipe(uglify())
         .pipe(header(banner, { pkg: pkg }))
@@ -60,8 +81,62 @@ gulp.task('minify-js', ['js'], function() {
         }))
 });
 
+// Copy JS to dist
+gulp.task('js', function () {
+    return gulp.src(['js/d3/paye.js'])
+        .pipe(header(banner, { pkg: pkg }))
+        .pipe(gulp.dest('dist/js'))
+        .pipe(browserSync.reload({
+            stream: true
+        }))
+})
+
+// Minify JS
+gulp.task('minify-js', ['js'], function () {
+    return gulp.src('js/d3/paye.js')
+        .pipe(uglify())
+        .pipe(header(banner, { pkg: pkg }))
+        .pipe(rename({ suffix: '.min' }))
+        .pipe(gulp.dest('dist/js'))
+        .pipe(browserSync.reload({
+            stream: true
+        }))
+});
+
+// Copy JS to dist
+gulp.task('js', function () {
+    return gulp.src(['js/d3/ibr.js'])
+        .pipe(header(banner, { pkg: pkg }))
+        .pipe(gulp.dest('dist/js'))
+        .pipe(browserSync.reload({
+            stream: true
+        }))
+})
+
+// Minify JS
+gulp.task('minify-js', ['js'], function () {
+    return gulp.src('js/d3/ibr.js')
+        .pipe(uglify())
+        .pipe(header(banner, { pkg: pkg }))
+        .pipe(rename({ suffix: '.min' }))
+        .pipe(gulp.dest('dist/js'))
+        .pipe(browserSync.reload({
+            stream: true
+        }))
+});
+
+// Copy JS to dist
+gulp.task('csv', function () {
+    return gulp.src(['js/d3/data.csv'])
+        .pipe(gulp.dest('dist/csv'))
+        .pipe(browserSync.reload({
+            stream: true
+        }))
+})
+
+
 // Copy vendor libraries from /bower_components into /vendor
-gulp.task('copy', function() {
+gulp.task('copy', function () {
     gulp.src(['bower_components/bootstrap/dist/**/*', '!**/npm.js', '!**/bootstrap-theme.*', '!**/*.map'])
         .pipe(gulp.dest('vendor/bootstrap'))
 
@@ -104,13 +179,15 @@ gulp.task('copy', function() {
     gulp.src(['bower_components/raphael/raphael.js', 'bower_components/raphael/raphael.min.js'])
         .pipe(gulp.dest('vendor/raphael'))
 
+    gulp.src(['bower_components/d3/*'])
+        .pipe(gulp.dest('vendor/d3'))
 })
 
 // Run everything
 gulp.task('default', ['minify-css', 'minify-js', 'copy']);
 
 // Configure the browserSync task
-gulp.task('browserSync', function() {
+gulp.task('browserSync', function () {
     browserSync.init({
         server: {
             baseDir: ''
@@ -119,7 +196,7 @@ gulp.task('browserSync', function() {
 })
 
 // Dev task with browserSync
-gulp.task('dev', ['browserSync', 'less', 'minify-css', 'js', 'minify-js'], function() {
+gulp.task('dev', ['browserSync', 'less', 'minify-css', 'js', 'minify-js'], function () {
     gulp.watch('less/*.less', ['less']);
     gulp.watch('dist/css/*.css', ['minify-css']);
     gulp.watch('js/*.js', ['minify-js']);

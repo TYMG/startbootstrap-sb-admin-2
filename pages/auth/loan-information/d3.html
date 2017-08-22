@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>MyServicer, YourServicer, ShoeServicer</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Animate CSS -->
+    <link href="../../../vendor/animate.css/animate.min.css" rel="stylesheet">
+
+
+    <!-- MetisMenu CSS -->
+    <link href="../../../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../../dist/css/sb-admin-2.css" rel="stylesheet">
+
+     <!-- d3 svg graph  -->
+    <link href="../../../dist/css/d3.min.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="../../../vendor/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper" class="container">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">MyServicer.gov</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li>
+                    <a href="../dashboard-mason.html">
+                        <i class="fa fa-tachometer fa-fw"></i>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-envelope fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>Servicer.gov</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>Your Loan Analysis is ready for review!!! To view, please click the link below, other...</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>Customer Service</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>Good Afternoon, In response to your question regarding the Pell Loan, you would be...</div>
+                            </a>
+                        </li>
+
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>Read All Messages</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-messages -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-tasks fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-tasks">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Loans Repaid</strong>
+                                        <span class="pull-right text-muted">80% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                                            style="width: 80%">
+                                            <span class="sr-only">80% Complete (danger)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>See More Details</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-tasks -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-comment fa-fw"></i> New Article Suggestion
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-trophy fa-fw"></i> New Milestone!!
+                                    <span class="pull-right text-muted small">2 hours ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-exclamation fa-fw"></i> Upcoming Payment
+                                    <span class="pull-right text-muted small">2 Days ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>See All Alerts</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-alerts -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="profile-settings.html"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-certificate fa-fw"></i> Badges</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-list-alt fa-fw"></i> Loan Information</a>
+                        </li>
+                        <li>
+                            <a href="payment/make-payment.html"><i class="fa fa-money fa-fw"></i> Make A Payment<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="../payment/make-payment.html">Online Payment</a>
+                                </li>
+                                <li>
+                                    <a href="../payment/make-payment.html">Set Up Auto Payment</a>
+                                </li>
+                                <li>
+                                    <a href="#">Other Forms of Payment <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="../payment/make-payment.html">Bank Auto Pay</a>
+                                        </li>
+                                        <li>
+                                            <a href="../payment/make-payment.html">Via Phone</a>
+                                        </li>
+                                        <li>
+                                            <a href="../payment/make-payment.html">Via Mail</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Counseling<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="flot.html">Flot Charts</a>
+                                </li>
+                                <li>
+                                    <a href="morris.html">Morris.js Charts</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+
+                        <li>
+                            <a href="tables.html"><i class="fa fa-calculator fa-fw"></i> Repayment</a>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fa fa-university fa-fw"></i> Classroom<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="../classroom/classroom-home.html">Videos</a>
+                                </li>
+                                <li>
+                                    <a href="../classroom/classroom-home.html">Articles</a>
+                                </li>
+                                <li>
+                                    <a href="../classroom/classroom-home.html">Forums</a>
+                                </li>
+                                <li>
+                                    <a href="../classroom/classroom-home.html">Calculators</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <div id="dashboard-page-wrapper">
+            <div id="loan-information__main" class="col-lg-12">
+                <div id="loan-information__header" class="col-lg-12">
+                    <h1 class="page-header dashboard-header">Loan Information</h1>
+                </div>
+                <div id="loan-information__aby" class="col-lg-12">
+                   <div class="row">
+                        <div id="rpe___ct" class="col-lg-12">
+                                            <svg></svg>
+                                        </div>
+                   </div>
+                </div>
+             
+
+                <!-- Modal -->
+                <div class="modal fade" id="li__rpa__analyzer-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Repayment Performance Analysis</h4>
+                            </div>
+                            <div id="rpa-modal__body" class="modal-body">
+                                <div id="rpa-modal__1" class="rpa-modal__row  row hidden">
+                                    <div class="col-lg-4"><label> Reviewing Loan Information</label></div>
+                                    <div class="rpa-modal__pb col-lg-8 ">
+                                        <div class="progress">
+                                            <div id="rpa-modal__1-pb" class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0"
+                                                aria-valuemax="100" style="width: 0%">
+                                                <span class="sr-only">45% Complete</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="rpa-modal__2" class="rpa-modal__row  row hidden">
+                                    <div class="col-lg-4"> <label> Reviewing Payment History </label></div>
+                                    <div class="col-lg-8">
+                                        <div class="progress">
+                                            <div id="rpa-modal__2-pb" class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0"
+                                                aria-valuemax="100" style="width: 0%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="rpa-modal__3" class="rpa-modal__row  row hidden">
+                                    <div class="col-lg-4"><label>Analyzing Risks</label></div>
+                                    <div class="col-lg-8">
+                                        <div class="progress">
+                                            <div id="rpa-modal__3-pb" class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0"
+                                                aria-valuemax="100" style="width: 0%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="rpa-modal__4" class="rpa-modal__row  row hidden">
+                                    <div class="col-lg-4"><label> Calculating Score</label></div>
+                                    <div class="col-lg-8">
+                                        <div class="progress">
+                                            <div id="rpa-modal__4-pb" class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0"
+                                                aria-valuemax="100" style="width: 0%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="rpa-modal__5" class="row hidden">
+                                    <div id="rpa-modal__score" class="col-lg-9 col-lg-offset-1">
+                                        <h2>Your Repayment Score: <span class="fa-green">Good</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- jQuery -->
+                <script src="../../../vendor/jquery/jquery.min.js"></script>
+
+                <!-- Bootstrap Core JavaScript -->
+                <script src="../../../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+                <script type="text/javascript">
+                    var payment = [[2012, 3.0], [2013, 3.9], [2014, 2.0], [2015, 1.2], [2016, 3.0], [201, 3.9], [2014, 2.0], [2015, 1.2]];
+
+
+                    var options = {
+                        lines: {
+                            show: true
+                        },
+                        points: {
+                            show: true
+                        },
+                        xaxis: {
+                            tickDecimals: 0,
+                            tickSize: 1
+                        }
+                    };
+                    // Load the first series by default, so we don't have an empty plot
+                    // $("button.fetchSeries:first").click();
+                    // Add the Flot version string to the footer
+
+                    $('#collapseOne').on('shown.bs.collapse', function () {
+                        animateRepayGraph("#standard_placeholder", genStandardRepayArr());
+                    })
+                    $('#collapseTwo').on('shown.bs.collapse', function () {
+                        animateRepayGraph("#graduated_placeholder", genGraduatedRepayArr());
+                    })
+
+                    $('#li__rpa__analyzer-modal').on('show.bs.modal', function () {
+                        setTimeout(function () {
+                            $("#rpa-modal__1").removeClass('hidden');
+                            $("#rpa-modal__1").addClass('animated fadeIn');
+                            updateProgressBar("#rpa-modal__1-pb");
+                        }
+                            , 3000);
+                        setTimeout(function () {
+                            $("#rpa-modal__2").removeClass('hidden');
+                            $("#rpa-modal__2").addClass('animated fadeIn');
+                            updateProgressBar("#rpa-modal__2-pb");
+
+                        }
+                            , 4500)
+                        setTimeout(function () {
+                            $("#rpa-modal__3").removeClass('hidden');
+                            $("#rpa-modal__3").addClass('animated fadeIn');
+                            updateProgressBar("#rpa-modal__3-pb");
+
+                        }
+                            , 6000)
+                        setTimeout(function () {
+                            $("#rpa-modal__4").removeClass('hidden');
+                            $("#rpa-modal__4").addClass('animated fadeIn');
+                            updateProgressBar("#rpa-modal__4-pb");
+
+                        }
+                            , 7500)
+                        setTimeout(function () {
+                            $("#rpa-modal__5").removeClass('hidden');
+                            $("#rpa-modal__5").addClass('animated fadeIn');
+
+                        }
+                            , 13000)
+                    });
+
+                    $('#li__rpa__analyzer-modal').on('hidden.bs.modal', function () {
+                        $("#rpa-modal__1").addClass('hidden');
+                        $("#rpa-modal__2").addClass('hidden');
+                        $("#rpa-modal__3").addClass('hidden');
+                        $("#rpa-modal__4").addClass('hidden');
+                        $("#rpa-modal__5").addClass('hidden');
+                    })
+
+                    function updateProgressBar(progressBarId) {
+                        var progress = 0;
+                        console.log(progressBarId)
+                        var intervalFunct = setInterval(function () {
+                            console.log(progress)
+                            progress += 10;
+                            $(progressBarId).css('width', progress + '%');
+                            if (progress > 100) {
+                                clearInterval(intervalFunct);
+                            }
+                        }, 250)
+                    }
+                    function animateRepayGraph(repayPlotId, loanPayments) {
+                        var data = [];
+                        var alreadyFetched = {};
+                        $.plot(repayPlotId, data, this.options);
+                        var iteration = 0;
+                        var payment = loanPayments;
+                        function fetchData() {
+                            ++iteration;
+                            function onDataReceived(series) {
+                                // Load all the data in one pass; if we only got partial
+                                // data we could merge it with what we already have.
+                                data = [series];
+                                $.plot(repayPlotId, data, options);
+                            }
+                            // Normally we call the same URL - a script connected to a
+                            // database - but in this case we only have static example
+                            // files, so we need to modify the URL.
+                            onDataReceived(payment.slice(0, iteration))
+
+                            if (iteration < 13) {
+                                setTimeout(fetchData, 1000);
+                            } else {
+                                data = [];
+                                alreadyFetched = {};
+                            }
+                        }
+                        setTimeout(fetchData, 1000);
+                    }
+
+                    /*
+                     
+                    Generator
+        
+                    Will generate an array depending on the repay type
+                    */
+
+                    function genStandardRepayArr() {
+                        var repaymentArr = []
+                        var loanOver120Months = 30000;
+                        var percentOfIncome = 60000 * .005;
+                        var monthlyPayment = percentOfIncome;
+                        for (var i = 0; i < 13; i++) {
+                            loanOver120Months = loanOver120Months - ((monthlyPayment * 4) + (Math.random() * (monthlyPayment * 2)));
+                            if (loanOver120Months > 0) {
+                                repaymentArr[i] = [2012 + i, loanOver120Months];
+                            } else {
+                                repaymentArr[i] = [2012 + i, 0];
+                            }
+                        }
+                        return repaymentArr;
+                    }
+
+                    /*
+                    
+                   Generator
+       
+                   Will generate an array depending on the repay type
+                   */
+
+                    function genGraduatedRepayArr() {
+                        var repaymentArr = []
+                        var loanOver120Months = 30000;
+                        var percentOfIncome = 60000 * .005;
+                        var monthlyPayment = percentOfIncome;
+                        for (var i = 0; i < 13; i++) {
+                            loanOver120Months = loanOver120Months - (((60000 * (.005 + i / 1000)) * 4) + (Math.random() * (monthlyPayment * 2)));
+                            if (loanOver120Months > 0) {
+                                repaymentArr[i] = [2012 + i, loanOver120Months];
+                            } else {
+                                repaymentArr[i] = [2012 + i, 0];
+                            }
+                        }
+                        return repaymentArr;
+                    }
+                </script>
+
+                <!-- Metis Menu Plugin JavaScript -->
+                <script src="../../../vendor/metisMenu/metisMenu.min.js"></script>
+
+                <!-- Morris Charts JavaScript -->
+                <script src="../../../vendor/raphael/raphael.min.js"></script>
+                <script src="../../../vendor/morrisjs/morris.min.js"></script>
+                <script src="../../../vendor/flot/excanvas.min.js"></script>
+                <script src="../../../vendor/flot/jquery.flot.js"></script>
+                <script src="../../../vendor/flot/jquery.flot.pie.js"></script>
+                <script src="../../../vendor/flot/jquery.flot.resize.js"></script>
+                <script src="../../../vendor/flot/jquery.flot.time.js"></script>
+                <script src="../../../vendor/flot-tooltip/jquery.flot.tooltip.min.js"></script>
+                <script src="../../../data/morris-data.js"></script>
+                <script src="../../../data/loan-info-data.js"></script>
+
+                <!-- D3 -->
+                <script src="../../../vendor/d3/d3.js"></script>
+                <script src="../../../dist/js/ibr.js"></script>
+
+
+                <!-- Custom Theme JavaScript -->
+                <script src="../../../dist/js/sb-admin-2.js"></script>
+
+</body>
+
+</html>

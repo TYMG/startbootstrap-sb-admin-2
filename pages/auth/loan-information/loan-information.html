@@ -25,6 +25,9 @@
     <!-- Custom CSS -->
     <link href="../../../dist/css/sb-admin-2.css" rel="stylesheet">
 
+     <!-- d3 svg graph  -->
+    <link href="../../../dist/css/d3.min.css" rel="stylesheet">
+
     <!-- Morris Charts CSS -->
     <link href="../../../vendor/morrisjs/morris.css" rel="stylesheet">
 
@@ -427,7 +430,7 @@
                                                         4%
                                                     </div>
                                                     <div class="col-lg-12 padding-v-1">
-                                                        <button type="button" class="btn btn-blue btn-lg text-uppercase col-lg-8 col-lg-offset-2">View Or Add Your Loans</button>
+                                                        <button type="button" class="btn btn-blue btn-lg text-uppercase col-lg-8 col-lg-offset-1">View Or Add Your Loans</button>
                                                     </div>
                                                     <div class="col-lg-12">
                                                         <a href="#">More Information</a>
@@ -899,6 +902,13 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <div id="rpe___ct" class="col-lg-12">
+                                            <label class="guideline">
+                                                Show Guideline & Curtain
+                                                <input type="checkbox" id="show_guideline" />
+                                            </label>
+                                            <svg></svg>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1148,6 +1158,10 @@
                 <script src="../../../vendor/flot-tooltip/jquery.flot.tooltip.min.js"></script>
                 <script src="../../../data/morris-data.js"></script>
                 <script src="../../../data/loan-info-data.js"></script>
+
+                <!-- D3 -->
+                <script src="../../../vendor/d3/d3.js"></script>
+                <script src="../../../dist/js/paye.js"></script>
 
 
                 <!-- Custom Theme JavaScript -->
